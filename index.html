@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本中部・關西 8 晚行程｜2026.11.21–11.29</title>
+<style>
+  :root{
+    --ink:#1c1c1a;
+    --ink-soft:#55554e;
+    --paper:#faf8f4;
+    --line:#ddd6c9;
+    --accent:#a8342a;
+    --accent-soft:#f2e6e2;
+    --gold:#8a7448;
+    --map:#2f5d7c;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    font-size:16px;line-height:1.75;letter-spacing:.01em;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:30px 22px 72px}
+
+  header{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:8px}
+  .kicker{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+  h1{
+    font-family:"Noto Serif JP","Hiragino Mincho ProN","Songti TC",serif;
+    font-size:31px;line-height:1.34;font-weight:600;margin:0 0 16px;letter-spacing:.02em;
+  }
+  .meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:13px;color:var(--ink-soft)}
+  .meta b{font-weight:600;color:var(--ink)}
+
+  h2{
+    font-family:"Noto Serif JP","Hiragino Mincho ProN","Songti TC",serif;
+    font-size:19px;font-weight:600;margin:46px 0 16px;padding-left:12px;
+    border-left:3px solid var(--accent);letter-spacing:.03em;
+  }
+  h3{font-size:15px;font-weight:600;margin:26px 0 6px}
+  p{margin:0 0 14px}
+  .lead{font-size:15px;color:var(--ink-soft)}
+
+  /* Google Maps 連結 */
+  a.map{
+    color:inherit;text-decoration:none;
+    border-bottom:1px dotted var(--map);
+    padding-bottom:.5px;
+    transition:background .15s;
+  }
+  a.map:hover{background:#e8eef2}
+  a.map::after{
+    content:"↗";font-size:.68em;vertical-align:super;
+    color:var(--map);margin-left:1px;letter-spacing:0;
+  }
+
+  .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:22px 0 8px}
+  .summary>div{background:var(--paper);padding:14px 14px 13px}
+  .summary dt{font-size:10.5px;letter-spacing:.16em;color:var(--gold);margin:0 0 5px}
+  .summary dd{margin:0;font-size:14.5px;font-weight:600;word-break:keep-all;line-height:1.5}
+
+  table{width:100%;border-collapse:collapse;margin:0 0 22px;font-size:14px}
+  caption{caption-side:top;text-align:left;font-size:12px;color:var(--ink-soft);padding-bottom:10px}
+  th,td{text-align:left;padding:11px 9px;vertical-align:top;border-bottom:1px solid var(--line)}
+  thead th{font-size:10.5px;letter-spacing:.16em;color:var(--gold);font-weight:600;border-bottom:1.5px solid var(--ink);white-space:nowrap}
+  tbody tr:last-child td{border-bottom:1.5px solid var(--ink)}
+  td.date{white-space:nowrap;font-weight:600;font-variant-numeric:tabular-nums;width:88px}
+  td.date span{display:block;font-weight:400;font-size:11px;color:var(--ink-soft);letter-spacing:.08em}
+  td.base{white-space:nowrap;font-size:13px;width:96px}
+  td.leg{font-size:12.5px;color:var(--ink-soft);line-height:1.6;width:172px}
+  .tag{display:inline-block;font-size:10.5px;letter-spacing:.1em;padding:1px 7px;border-radius:2px;background:var(--accent-soft);color:var(--accent);font-weight:600;margin-right:6px;vertical-align:1.5px}
+
+  .legend{font-size:12.5px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:10px;margin:-8px 0 0}
+  .legend a.map{font-size:12.5px}
+
+  .traps{background:#fff;border:1px solid var(--line);padding:2px 20px 8px;margin:0 0 22px}
+  .traps ol{padding-left:19px;margin:16px 0}
+  .traps li{margin:0 0 15px;font-size:14.5px}
+  .traps li:last-child{margin-bottom:8px}
+  .traps li b{color:var(--accent)}
+
+  .money td:last-child,.money th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .money tfoot td{font-weight:700;border-top:1.5px solid var(--ink);border-bottom:none;padding-top:13px}
+
+  .note{border-left:2px solid var(--gold);background:#fff;padding:13px 16px;font-size:13.5px;color:var(--ink-soft);margin:0 0 18px}
+  .note b{color:var(--ink)}
+
+  footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);font-size:11.5px;color:var(--ink-soft);letter-spacing:.06em}
+
+  /* ---------- 逐日流程圖 ---------- */
+  .tabbar{
+    position:sticky;top:0;z-index:20;display:flex;
+    overflow-x:auto;background:var(--paper);
+    border-bottom:1px solid var(--line);border-top:1px solid var(--line);
+    margin:0 0 22px;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .tabbar::-webkit-scrollbar{display:none}
+  .tab{
+    flex:0 0 auto;background:none;border:0;border-bottom:2px solid transparent;
+    padding:11px 15px 10px;font:inherit;font-size:13.5px;color:var(--ink-soft);
+    cursor:pointer;letter-spacing:.03em;line-height:1.25;text-align:center;
+  }
+  .tab span{display:block;font-size:10px;color:var(--gold);letter-spacing:.12em;margin-top:2px}
+  .tab[aria-selected="true"]{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+
+  .daytitle{font-size:16px;font-weight:700;margin:0 0 16px;line-height:1.45}
+  .daytitle span{font-weight:400;font-size:13px;color:var(--ink-soft);margin-left:10px;letter-spacing:.03em}
+  .day[hidden]{display:none}
+  .day{scroll-margin-top:54px}
+
+  .flow{margin:0 0 6px}
+  .node{display:grid;grid-template-columns:56px 22px 1fr;align-items:stretch}
+  .node .t{
+    font-size:12.5px;font-variant-numeric:tabular-nums;font-weight:600;
+    text-align:right;padding:7px 9px 0 0;letter-spacing:.01em;white-space:nowrap;
+  }
+  .node.move .t{font-weight:400;color:var(--ink-soft)}
+  .node .rail{position:relative;display:flex;justify-content:center;padding-top:10px}
+  .node .rail::before{
+    content:"";position:absolute;top:0;bottom:0;width:1px;background:#c9bfab;
+  }
+  .node:first-child .rail::before{top:10px}
+  .node:last-child .rail::before{bottom:auto;height:10px}
+  .node .dot{
+    position:relative;z-index:1;width:9px;height:9px;border-radius:50%;
+    background:var(--accent);box-shadow:0 0 0 3px var(--paper);
+  }
+  .node.move .dot{width:5px;height:5px;background:#b9b1a2;margin-top:2px}
+  .node .body{padding:4px 0 15px 12px}
+  .node:last-child .body{padding-bottom:0}
+  .place{font-size:15px;font-weight:600;line-height:1.5}
+  .node.move .leg{font-size:13px;color:var(--ink-soft);line-height:1.5}
+  .fnote{font-size:12.5px;color:var(--ink-soft);line-height:1.6;margin-top:1px}
+
+  @media (max-width:660px){
+    .wrap{padding:24px 17px 60px}
+    h1{font-size:26px}
+    .summary{grid-template-columns:repeat(2,1fr)}
+
+    table.itin{font-size:14px}
+    table.itin thead{display:none}
+    table.itin tbody tr{display:block;padding:16px 0 15px;border-bottom:1px solid var(--line)}
+    table.itin tbody tr:last-child{border-bottom:1.5px solid var(--ink)}
+    table.itin td{display:block;width:auto;border:none;padding:0}
+    table.itin td.date{font-size:15.5px;font-weight:700;margin-bottom:2px}
+    table.itin td.date span{display:inline;font-size:11.5px;font-weight:400;margin-left:9px;letter-spacing:.08em}
+    table.itin td.base{font-size:12px;color:var(--gold);letter-spacing:.06em;margin-bottom:7px}
+    table.itin td.base::before{content:"住宿 · "}
+    table.itin td.plan{font-size:14.5px;line-height:1.75}
+    table.itin td.leg{margin-top:9px;padding-top:8px;border-top:1px dashed var(--line);font-size:12.5px}
+
+    .money{font-size:13.5px}
+    .money td,.money th{padding:10px 5px}
+    .traps{padding:2px 15px 6px}
+
+    .node{grid-template-columns:47px 20px 1fr}
+    .node .t{font-size:12px;padding-right:7px}
+    .node .body{padding-left:10px}
+    .place{font-size:14.5px}
+    .tab{padding:10px 13px 9px;font-size:13px}
+  }
+
+  @media print{
+    body{background:#fff;font-size:10.5pt}
+    .wrap{max-width:none;padding:0}
+    h2{page-break-after:avoid;margin-top:26px}
+    tr{page-break-inside:avoid}
+    .traps li,.note{page-break-inside:avoid}
+    .traps{padding-bottom:2px}
+    h3{break-after:avoid}
+    a{color:inherit;text-decoration:none}
+    a.map::after{content:""}
+    a.map{border-bottom:none}
+    .tabbar{display:none}
+    .day[hidden]{display:block !important}
+    .day{page-break-before:auto}
+    .daytitle{page-break-after:avoid}
+    .node{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">Japan · Chubu &amp; Kansai</p>
+  <h1>名古屋・京都・大阪<br>8 晚 9 日</h1>
+  <div class="meta">
+    <span><b>2026.11.21（六）– 11.29（日）</b></span>
+    <span>關西入 · 中部走</span>
+    <span>全程公共交通</span>
+  </div>
+</header>
+
+<dl class="summary">
+  <div><dt>天數</dt><dd>8 晚 9 日</dd></div>
+  <div><dt>基地</dt><dd>大阪 2・京都 2・名古屋 4</dd></div>
+  <div><dt>機場</dt><dd>KIX 入／NGO 走</dd></div>
+  <div><dt>預算</dt><dd>約 HK$14,000／人</dd></div>
+</dl>
+
+<h2>行程</h2>
+
+<table class="itin">
+  <caption>住宿欄為當晚住宿城市；交通欄為實際車程與票價。</caption>
+  <thead>
+    <tr><th>日期</th><th>住宿</th><th>行程</th><th>交通</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="date">11/21<span>星期六</span></td>
+      <td class="base">大阪・難波</td>
+      <td class="plan">香港飛<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">關西機場</a>，下午抵達。晚上<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%81%93%E9%A0%93%E5%A0%80%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">道頓堀</a>、<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%BF%83%E9%BD%8B%E6%A9%8B%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">心齋橋</a></td>
+      <td class="leg">南海ラピート 34 分 ¥1,670<br>或空港急行 43 分 ¥970</td>
+    </tr>
+    <tr>
+      <td class="date">11/22<span>星期日</span></td>
+      <td class="base">大阪</td>
+      <td class="plan"><span class="tag">重點</span><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">黑門市場</a> → <a class="map" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A7%E3%82%93%E3%81%A7%E3%82%93%E3%82%BF%E3%82%A6%E3%83%B3%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">日本橋電電城</a>（動漫・遊戲） → <a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%80%9A%E5%A4%A9%E9%96%A3" target="_blank" rel="noopener">通天閣</a>・<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E4%B8%96%E7%95%8C%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">新世界</a> → 晚上<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B3%95%E5%96%84%E5%AF%BA%E6%A8%AA%E4%B8%81" target="_blank" rel="noopener">法善寺橫丁</a></td>
+      <td class="leg">地鐵</td>
+    </tr>
+    <tr>
+      <td class="date">11/23<span>星期一・日本假期</span></td>
+      <td class="base">京都</td>
+      <td class="plan">上午移動往京都。下午<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">清水寺</a>、<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%8C%E5%B9%B4%E5%9D%82%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">二年坂</a>、<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%9D%82%E3%81%AE%E5%A1%94" target="_blank" rel="noopener">八坂の塔</a>；晚間<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E5%8F%B0%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">高台寺</a>夜楓</td>
+      <td class="leg">JR 新快速 29 分 ≈¥580</td>
+    </tr>
+    <tr>
+      <td class="date">11/24<span>星期二</span></td>
+      <td class="base">京都</td>
+      <td class="plan"><span class="tag">重點</span><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E7%A6%8F%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">東福寺</a> 8:30 開門即到 → <a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E8%A6%B3%E5%A0%82" target="_blank" rel="noopener">永観堂</a> → <a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E7%A6%85%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">南禅寺</a> → <a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%93%B2%E5%AD%A6%E3%81%AE%E9%81%93%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">哲學之道</a> → <a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E9%96%A3%E5%AF%BA" target="_blank" rel="noopener">銀閣寺</a>。晚間<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%85%88%E6%96%97%E7%94%BA" target="_blank" rel="noopener">先斗町</a></td>
+      <td class="leg">市巴士・地鐵</td>
+    </tr>
+    <tr>
+      <td class="date">11/25<span>星期三</span></td>
+      <td class="base">名古屋</td>
+      <td class="plan">早上<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E7%AB%B9%E6%9E%97%E3%81%AE%E5%B0%8F%E5%BE%84%20%E5%B5%90%E5%B1%B1" target="_blank" rel="noopener">嵐山竹林</a>・<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E9%BE%8D%E5%AF%BA%20%E5%B5%90%E5%B1%B1" target="_blank" rel="noopener">天龍寺</a>；下午回<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85" target="_blank" rel="noopener">京都駅</a>取行李、<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">東寺</a>；<b>18:00 新幹線往名古屋</b></td>
+      <td class="leg">のぞみ 34 分 ¥5,170（自由席）</td>
+    </tr>
+    <tr>
+      <td class="date">11/26<span>星期四</span></td>
+      <td class="base">名古屋</td>
+      <td class="plan"><span class="tag">重點</span><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%83%96%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF" target="_blank" rel="noopener">Ghibli Park</a> 全日（平日 ¥7,300）</td>
+      <td class="leg">地鐵＋リニモ</td>
+    </tr>
+    <tr>
+      <td class="date">11/27<span>星期五</span></td>
+      <td class="base">名古屋</td>
+      <td class="plan"><span class="tag">重點</span><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B5%90%E6%B8%93" target="_blank" rel="noopener">香嵐渓</a>紅葉全日，日落後夜間燈光至 21:00</td>
+      <td class="leg">名鉄バス ¥900 單程（約 50–60 分）</td>
+    </tr>
+    <tr>
+      <td class="date">11/28<span>星期六</span></td>
+      <td class="base">名古屋</td>
+      <td class="plan"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%9F%8E" target="_blank" rel="noopener">名古屋城</a>、<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%BE%B3%E5%B7%9D%E5%9C%92" target="_blank" rel="noopener">徳川園</a>、<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%A0%88%E8%A6%B3%E9%9F%B3" target="_blank" rel="noopener">大須観音</a>、<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%A0%84%20%E5%90%8D%E5%8F%A4%E5%B1%8B" target="_blank" rel="noopener">栄</a>；或<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E7%8A%AC%E5%B1%B1%E5%9F%8E" target="_blank" rel="noopener">犬山</a> day trip（犬山城・城下町・<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%AF%82%E5%85%89%E9%99%A2%20%E7%8A%AC%E5%B1%B1" target="_blank" rel="noopener">寂光院</a>）</td>
+      <td class="leg">地鐵・名鉄</td>
+    </tr>
+    <tr>
+      <td class="date">11/29<span>星期日</span></td>
+      <td class="base">—</td>
+      <td class="plan"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E9%83%A8%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">中部機場</a>飛返香港。早上可在名古屋吃最後一餐</td>
+      <td class="leg">名鉄 28 分 ¥1,430（μ-SKY）<br>¥980（一般車）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="legend">地點名稱有虛線底線的，點一下即開 Google Maps。</p>
+
+<h2>逐日流程</h2>
+
+<nav class="tabbar" role="tablist" aria-label="逐日行程">
+    <button class="tab" type="button" data-day="1">11/21<span>六</span></button>
+    <button class="tab" type="button" data-day="2">11/22<span>日</span></button>
+    <button class="tab" type="button" data-day="3">11/23<span>一</span></button>
+    <button class="tab" type="button" data-day="4">11/24<span>二</span></button>
+    <button class="tab" type="button" data-day="5">11/25<span>三</span></button>
+    <button class="tab" type="button" data-day="6">11/26<span>四</span></button>
+    <button class="tab" type="button" data-day="7">11/27<span>五</span></button>
+    <button class="tab" type="button" data-day="8">11/28<span>六</span></button>
+    <button class="tab" type="button" data-day="9">11/29<span>日</span></button>
+</nav>
+
+<div class="days">
+  <section class="day" id="day1" data-day="1" hidden>
+    <p class="daytitle">11/21（六）<span>香港 → 大阪</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">上午</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4" target="_blank" rel="noopener">香港國際機場</a></div>
+          <div class="fnote">出發．航班待訂</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">下午</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">關西國際機場</a></div>
+          <div class="fnote">入境、取行李</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">南海ラピート</div>
+          <div class="fnote">34 分 ¥1,670（或空港急行 43 分 ¥970）</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">16:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%9B%A3%E6%B3%A2%E9%A7%85%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">難波</a></div>
+          <div class="fnote">酒店 check-in、放行李</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">18:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%81%93%E9%A0%93%E5%A0%80%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">道頓堀</a></div>
+          <div class="fnote">晚餐：串炸、章魚燒</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">20:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%BF%83%E9%BD%8B%E6%A9%8B%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">心齋橋</a></div>
+          <div class="fnote">逛街、藥妝</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day2" data-day="2" hidden>
+    <p class="daytitle">11/22（日）<span>大阪</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">09:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">黑門市場</a></div>
+          <div class="fnote">早餐：海鮮、串燒</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">步行</div>
+          <div class="fnote">約 12 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">10:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A7%E3%82%93%E3%81%A7%E3%82%93%E3%82%BF%E3%82%A6%E3%83%B3%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">日本橋電電城</a></div>
+          <div class="fnote">動漫・遊戲・電子零件</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">地鐵</div>
+          <div class="fnote">約 10 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">13:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%80%9A%E5%A4%A9%E9%96%A3" target="_blank" rel="noopener">通天閣・新世界</a></div>
+          <div class="fnote">午餐：串炸</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">地鐵</div>
+          <div class="fnote">約 10 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">15:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B3%95%E5%96%84%E5%AF%BA%E6%A8%AA%E4%B8%81" target="_blank" rel="noopener">法善寺橫丁</a></div>
+          <div class="fnote">咖啡、石板小巷</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">18:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%81%93%E9%A0%93%E5%A0%80%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">道頓堀</a></div>
+          <div class="fnote">晚餐</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day3" data-day="3" hidden>
+    <p class="daytitle">11/23（一）<span>大阪 → 京都</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">09:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%9B%A3%E6%B3%A2%E9%A7%85%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">難波</a></div>
+          <div class="fnote">check out</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">地鐵＋JR 新快速</div>
+          <div class="fnote">約 60 分 ≈¥580</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">10:40</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85" target="_blank" rel="noopener">京都駅</a></div>
+          <div class="fnote">酒店放行李</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">市巴士</div>
+          <div class="fnote">約 15 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">12:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8C%A6%E5%B8%82%E5%A0%B4%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">錦市場</a></div>
+          <div class="fnote">午餐、漬物、玉子燒</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">市巴士</div>
+          <div class="fnote">約 15 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">13:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">清水寺</a></div>
+          <div class="fnote">清水舞台</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">15:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%9D%82%E3%81%AE%E5%A1%94" target="_blank" rel="noopener">二年坂・八坂の塔</a></div>
+          <div class="fnote">石坂散策</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">17:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E5%8F%B0%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">高台寺</a></div>
+          <div class="fnote">夜楓．17:00 起點燈</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">19:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">祇園</a></div>
+          <div class="fnote">晚餐</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day4" data-day="4" hidden>
+    <p class="daytitle">11/24（二）<span>京都</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">08:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">酒店出發</div>
+          <div class="fnote">市巴士 約 15 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">08:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E7%A6%8F%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">東福寺</a></div>
+          <div class="fnote">通天橋．開門即到，避開人潮</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">市巴士</div>
+          <div class="fnote">約 15 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">10:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E8%A6%B3%E5%A0%82" target="_blank" rel="noopener">永観堂</a></div>
+          <div class="fnote">紅葉最密</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">11:45</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E7%A6%85%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">南禅寺</a></div>
+          <div class="fnote">三門、水路閣．午餐湯豆腐</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">14:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%93%B2%E5%AD%A6%E3%81%AE%E9%81%93%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">哲學之道</a></div>
+          <div class="fnote">沿運河散步</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">15:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E9%96%A3%E5%AF%BA" target="_blank" rel="noopener">銀閣寺</a></div>
+          <div class="fnote">16:30 關門前入場</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">16:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%9B%9B%E6%9D%A1%E6%B2%B3%E5%8E%9F%E7%94%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">四条河原町</a></div>
+          <div class="fnote">購物、休息</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">18:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%85%88%E6%96%97%E7%94%BA" target="_blank" rel="noopener">先斗町</a></div>
+          <div class="fnote">晚餐．窄巷居酒屋</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day5" data-day="5" hidden>
+    <p class="daytitle">11/25（三）<span>京都 → 名古屋</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">07:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85" target="_blank" rel="noopener">京都駅</a></div>
+          <div class="fnote">行李寄儲物櫃</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">JR 嵯峨野線</div>
+          <div class="fnote">約 16 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">08:20</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E7%AB%B9%E6%9E%97%E3%81%AE%E5%B0%8F%E5%BE%84%20%E5%B5%90%E5%B1%B1" target="_blank" rel="noopener">嵐山竹林</a></div>
+          <div class="fnote">竹林の小径</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">09:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E9%BE%8D%E5%AF%BA%20%E5%B5%90%E5%B1%B1" target="_blank" rel="noopener">天龍寺</a></div>
+          <div class="fnote">曹源池庭園</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">10:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B8%A1%E6%9C%88%E6%A9%8B%20%E5%B5%90%E5%B1%B1" target="_blank" rel="noopener">渡月橋</a></div>
+          <div class="fnote">河畔散策</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">12:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">嵐山</div>
+          <div class="fnote">午餐</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">JR</div>
+          <div class="fnote">約 20 分回京都駅</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">13:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85" target="_blank" rel="noopener">京都駅</a></div>
+          <div class="fnote">取行李</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">近鉄・市巴士</div>
+          <div class="fnote">約 15 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">14:10</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%AF%BA%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">東寺</a></div>
+          <div class="fnote">五重塔・紅葉．16:30 最後入場</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">15:40</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85" target="_blank" rel="noopener">京都駅</a></div>
+          <div class="fnote">買車上便當</div></div>
+      </div>
+      <div class="node move">
+        <div class="t">18:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">京都駅 → 名古屋</div>
+          <div class="fnote">のぞみ 34 分 ¥5,170（自由席）</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">18:35</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85" target="_blank" rel="noopener">名古屋駅</a></div>
+          <div class="fnote">酒店 check-in</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">19:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E9%A7%85%20%E5%90%8D%E5%8F%A4%E5%B1%8B" target="_blank" rel="noopener">名駅</a></div>
+          <div class="fnote">晚餐：ひつまぶし 鰻魚飯</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day6" data-day="6" hidden>
+    <p class="daytitle">11/26（四）<span>名古屋 · Ghibli Park</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">08:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85" target="_blank" rel="noopener">名古屋駅</a></div>
+          <div class="fnote">地鐵東山線 → 藤が丘</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">地鐵＋リニモ</div>
+          <div class="fnote">25 分 ＋ 15 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">08:45</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E3%83%BB%E5%9C%B0%E7%90%83%E5%8D%9A%E8%A8%98%E5%BF%B5%E5%85%AC%E5%9C%92" target="_blank" rel="noopener">愛・地球博記念公園駅</a></div>
+          <div class="fnote">步行入園</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">09:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%83%96%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF" target="_blank" rel="noopener">Ghibli Park</a></div>
+          <div class="fnote">開園．平日 ¥7,300</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">10:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">ジブリの大倉庫</div>
+          <div class="fnote">指定入場時間 10:00</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">12:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">園內午餐</div>
+          <div class="fnote">大陸横断鉄道・カフェ</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">14:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">どんどこ森・もののけの里</div>
+          <div class="fnote">龍貓、魔法公主</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">15:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">魔女の谷</div>
+          <div class="fnote">霍爾、琪琪</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">17:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">閉園</div>
+          <div class="fnote">回名古屋</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">18:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85" target="_blank" rel="noopener">名古屋駅</a></div>
+          <div class="fnote">晚餐、伴手禮</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day7" data-day="7" hidden>
+    <p class="daytitle">11/27（五）<span>名古屋 · 香嵐渓</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">07:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85" target="_blank" rel="noopener">名古屋駅</a></div>
+          <div class="fnote">地鐵 → 伏見 → 鶴舞線 → 赤池</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">名鉄豊田線</div>
+          <div class="fnote">赤池 → 浄水 約 12 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">08:10</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%B5%84%E6%B0%B4%E9%A7%85" target="_blank" rel="noopener">浄水駅</a></div>
+          <div class="fnote">轉巴士</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">とよたおいでんバス</div>
+          <div class="fnote">約 60 分 ¥900．平日班次正常</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">09:20</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B5%90%E6%B8%93" target="_blank" rel="noopener">香嵐渓</a></div>
+          <div class="fnote">香積寺、待月橋、もみじのトンネル</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">12:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B5%90%E6%B8%93" target="_blank" rel="noopener">香嵐渓</a></div>
+          <div class="fnote">午餐：五平餅、炭焼きフランク</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">14:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E8%B6%B3%E5%8A%A9%20%E9%87%8D%E8%A6%81%E4%BC%9D%E7%B5%B1%E7%9A%84%E5%BB%BA%E9%80%A0%E7%89%A9%E7%BE%A4%E4%BF%9D%E5%AD%98%E5%9C%B0%E5%8C%BA" target="_blank" rel="noopener">足助の町並み</a></div>
+          <div class="fnote">老街、三州足助屋敷</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">16:40</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">飯盛山ライトアップ</div>
+          <div class="fnote">日落後點燈至 21:00</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">18:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B5%90%E6%B8%93" target="_blank" rel="noopener">香嵐渓</a></div>
+          <div class="fnote">回程巴士．先確認尾班車</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">20:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85" target="_blank" rel="noopener">名古屋</a></div>
+          <div class="fnote">晚餐</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day8" data-day="8" hidden>
+    <p class="daytitle">11/28（六）<span>名古屋</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">09:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%9F%8E" target="_blank" rel="noopener">名古屋城</a></div>
+          <div class="fnote">天守閣、本丸御殿</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">地鐵</div>
+          <div class="fnote">約 20 分</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">11:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%BE%B3%E5%B7%9D%E5%9C%92" target="_blank" rel="noopener">徳川園</a></div>
+          <div class="fnote">日式庭園紅葉</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">13:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%A0%88%E8%A6%B3%E9%9F%B3" target="_blank" rel="noopener">大須</a></div>
+          <div class="fnote">午餐</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">14:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%A0%88%E8%A6%B3%E9%9F%B3" target="_blank" rel="noopener">大須観音・大須商店街</a></div>
+          <div class="fnote">老街、動漫雜貨、電器</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">17:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%A0%84%20%E5%90%8D%E5%8F%A4%E5%B1%8B" target="_blank" rel="noopener">栄</a></div>
+          <div class="fnote">地下街購物</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">19:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E6%A0%84%20%E5%90%8D%E5%8F%A4%E5%B1%8B" target="_blank" rel="noopener">栄</a></div>
+          <div class="fnote">晚餐：手羽先</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="day" id="day9" data-day="9" hidden>
+    <p class="daytitle">11/29（日）<span>名古屋 → 香港</span></p>
+    <div class="flow">
+      <div class="node stop">
+        <div class="t">09:00</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place">酒店</div>
+          <div class="fnote">早餐、收拾</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">10:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85" target="_blank" rel="noopener">名古屋駅</a></div>
+          <div class="fnote">check out</div></div>
+      </div>
+      <div class="node move">
+        <div class="t"></div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">名鉄 μ-SKY</div>
+          <div class="fnote">28 分 ¥1,430（一般車 ¥980）</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">12:30</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E9%83%A8%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">中部國際空港</a></div>
+          <div class="fnote">check in、寄艙</div></div>
+      </div>
+      <div class="node move">
+        <div class="t">15:15</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="leg">CX539 起飛</div>
+          <div class="fnote">參考冬季班表，訂票時確認</div></div>
+      </div>
+      <div class="node stop">
+        <div class="t">19:10</div>
+        <div class="rail"><span class="dot"></span></div>
+        <div class="body"><div class="place"><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4" target="_blank" rel="noopener">香港國際機場</a></div>
+          <div class="fnote">抵港</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<h2>為甚麼這樣排</h2>
+
+<p class="lead">兩個日期是整條路線的骨架，其餘日子遷就它們。</p>
+
+<h3>香嵐渓必須平日去</h3>
+<p>2026 年<b>沒有</b>「八草 → 香嵐渓」直行巴士。經浄水駅轉とよたおいでんバス的話，11/21–23 三連休期間 11:00–18:00 的班次只能到「西中金」，根本不到香嵐渓；名鉄バス矢並線亦在 11/21、22、23、28、29 有區間運休。觀光協會自己寫明「請於平日前往」。故排在 11/27 星期五。</p>
+
+<h3>Ghibli Park 避開兩個地雷</h3>
+<p>排在 11/26 星期四：平日票 ¥7,300（週末 ¥7,800），人亦較少；同時避開 <b>11/27 愛知県民優先日</b>——每月 27 日外國人配額極少。海外門票於兩個月前、每月 10 日 14:00（日本時間）開賣，即 9/10 已開賣，需盡早購買。進場須出示護照，姓名不可轉讓。</p>
+
+<h3>東福寺揀平日早上</h3>
+<p>11/24 星期二 8:30 開門即到通天橋。與週末前往、同一地點排隊兩小時，是兩個世界。</p>
+
+<h2>注意</h2>
+
+<div class="traps">
+<ol>
+  <li><b>11/23 是日本勤労感謝の日</b>，連成 21–23 三連休。名古屋、京都酒店貴 1.5–2 倍，郊區巴士削班。行程已把城市日放在假期，郊區日放在平日。</li>
+  <li><b>京都 11/23–25 是全年最貴的三晚之一</b>（紅葉高峰 × 假期）。這幾晚的住宿要先訂，機票後訂。</li>
+  <li><b>香嵐渓回程班次較早。</b>看夜間燈光的話，出發前先確認尾班車時間，平日尾班約在晚間七至八時之間。</li>
+  <li><b>Ghibli Park 的 Grand Warehouse 需選入場時間</b>（10:00 或 14:00），購票時一併選。</li>
+  <li><b>11/25 是新幹線移動日。</b>行李寄京都駅儲物櫃，不要帶去嵐山。</li>
+</ol>
+</div>
+
+<h2>住宿</h2>
+
+<table>
+  <thead><tr><th>城市</th><th>晚數</th><th>區域</th><th>建議</th></tr></thead>
+  <tbody>
+    <tr><td class="base">大阪</td><td>2（11/21–23）</td><td><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%9B%A3%E6%B3%A2%E9%A7%85%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">難波</a></td><td class="leg">Sotetsu Fresa Inn Osaka-Namba／Vessel Inn Namba</td></tr>
+    <tr><td class="base">京都</td><td>2（11/23–25）</td><td><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%9B%9B%E6%9D%A1%E7%83%8F%E4%B8%B8%20%E4%BA%AC%E9%83%BD" target="_blank" rel="noopener">四条烏丸</a></td><td class="leg">Hotel M's Plus Shijō Ōmiya（巴士樞紐）／Richmond Hotel Premier Kyoto Ekimae</td></tr>
+    <tr><td class="base">名古屋</td><td>4（11/25–29）</td><td><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85" target="_blank" rel="noopener">名駅</a></td><td class="leg">Comfort Hotel Nagoya Meieki Minami／BASE LAYER HOTEL 名古屋錦</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>房間價格為估算。</b>商務酒店一般 ¥10,000–15,000／晚，但 11/21–23 假期及京都紅葉期會明顯偏高。實際房價與門票供應，訂購前請於官方或訂房平台核對。
+</div>
+
+<h2>預算（每人）</h2>
+
+<table class="money">
+  <thead><tr><th>項目</th><th>金額</th></tr></thead>
+  <tbody>
+    <tr><td>機票（關西入／中部走）</td><td>HK$3,800 – 4,600</td></tr>
+    <tr><td>住宿 8 晚</td><td>≈ HK$5,700（¥110,000）</td></tr>
+    <tr><td>交通（新幹線・機場・巴士・市內）</td><td>≈ HK$730（¥14,000）</td></tr>
+    <tr><td>門票（Ghibli ¥7,300 ＋ 寺廟）</td><td>≈ HK$530（¥10,300）</td></tr>
+    <tr><td>餐食 ¥6,000／日 × 9</td><td>≈ HK$2,800（¥54,000）</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td>合計（未計購物）</td><td>≈ HK$13,500 – 14,500</td></tr>
+  </tfoot>
+</table>
+
+<h2>備註</h2>
+<p class="lead">日圓金額為實查票價；港幣以 1 港元 ≈ 19 日圓估算，實際以結帳當日匯率為準。航空公司、班次與票價會隨開賣時間變動，出發前請再確認。</p>
+
+<footer>
+  2026 年 11 月 21–29 日　·　名古屋・京都・大阪　·　8 晚
+</footer>
+
+</div>
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var days = Array.prototype.slice.call(document.querySelectorAll('.day'));
+  function select(key, scroll){
+    tabs.forEach(function(t){
+      t.setAttribute('aria-selected', t.dataset.day === key ? 'true' : 'false');
+      t.setAttribute('role','tab');
+    });
+    days.forEach(function(d){ d.hidden = d.dataset.day !== key; });
+    if (scroll){
+      var b = tabs.filter(function(t){ return t.dataset.day === key; })[0];
+      if (b) b.scrollIntoView({block:'nearest', inline:'center', behavior:'smooth'});
+      var panel = days.filter(function(d){ return d.dataset.day === key; })[0];
+      if (panel) panel.scrollIntoView({block:'start', behavior:'smooth'});
+    }
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){ select(t.dataset.day, true); });
+  });
+  if (tabs.length) select(tabs[0].dataset.day, false);
+})();
+</script>
+</body>
+</html>
