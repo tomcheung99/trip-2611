@@ -154,6 +154,18 @@
     .money td,.money th{padding:10px 5px}
     .traps{padding:2px 15px 6px}
 
+    table.stack{font-size:14px}
+    table.stack thead{display:none}
+    table.stack tbody tr{display:block;padding:15px 0 14px;border-bottom:1px solid var(--line)}
+    table.stack tbody tr:last-child{border-bottom:1.5px solid var(--ink)}
+    table.stack td{display:block;border:none;padding:0;width:auto;white-space:normal}
+    table.stack td.base{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:3px}
+    table.stack td.base br{display:none}
+    table.stack td:nth-child(2){font-size:11.5px;color:var(--gold);letter-spacing:.06em;margin-bottom:9px}
+    table.stack td:nth-child(2) br{display:none}
+    table.stack td.leg{font-size:13px;line-height:1.7;color:var(--ink-soft)}
+    table.stack td.leg b{color:var(--ink);font-weight:700}
+
     .node{grid-template-columns:47px 20px 1fr}
     .node .t{font-size:12px;padding-right:7px}
     .node .body{padding-left:10px}
@@ -867,7 +879,7 @@
 
 <h2>住宿</h2>
 
-<table>
+<table class="stack">
   <thead><tr><th>城市</th><th>晚數</th><th>區域</th><th>建議</th></tr></thead>
   <tbody>
     <tr><td class="base">大阪</td><td>2 晚<br>11/21–23</td><td><a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%9B%A3%E6%B3%A2%E9%A7%85%20%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">難波</a></td><td class="leg">APA Hotel &amp; Resort 難波站前 Tower　<b>¥30,398</b>／晚（大浴場＋露天風呂）<br>Hotel Gracery 大阪難波　¥34,316／晚<br>karaksa hotel 大阪難波　¥34,668／晚</td></tr>
@@ -883,7 +895,7 @@
 
 <h2>門票與預約</h2>
 
-<table>
+<table class="stack">
   <thead><tr><th>項目</th><th>狀況</th><th>要做的事</th></tr></thead>
   <tbody>
     <tr>
@@ -926,7 +938,7 @@
 
 <h2>額外推薦（已加入行程或可選）</h2>
 
-<table>
+<table class="stack">
   <thead><tr><th>地點</th><th>排法</th><th>為咩值得</th></tr></thead>
   <tbody>
     <tr>
