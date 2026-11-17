@@ -1,0 +1,67 @@
+name: 行程修改建議
+description: 想改邊一日、改啲咩？白會喺呢個 issue 直接回覆同更新網站。
+title: "[行程] "
+labels: ["行程建議"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        填完撳 **Submit new issue** 就得。白（Hermes）會喺呢個 issue 回覆，
+        並更新 **https://tomcheung99.github.io/trip-2611/**
+        （通常幾分鐘內，最遲你下次開個網頁就見到）
+
+  - type: dropdown
+    id: day
+    attributes:
+      label: 邊一日？
+      description: 揀最接近嘅一日；如果係成個行程嘅建議，揀「整體」
+      options:
+        - 11/21（六）香港 → 大阪・新世界
+        - 11/22（日）心斎橋醫美 → 日本橋 IEM
+        - 11/23（一）京都：伏見稲荷 + 漫畫館
+        - 11/24（二）京都：東福寺・南禅寺・嵐山
+        - 11/25（三）奈良 day trip
+        - 11/26（四）大阪 → 名古屋・LEGOLAND
+        - 11/27（五）香嵐渓紅葉
+        - 11/28（六）犬山 day trip
+        - 11/29（日）大須 → 中部機場 → 香港
+        - 住宿
+        - 預算
+        - 整體（全部日子）
+    validations:
+      required: true
+
+  - type: textarea
+    id: change
+    attributes:
+      label: 想點改？
+      description: 直接寫，唔使寫得工整。例如「11/24 唔想去嵐山，想留喺京都市區」、「想加一日 outlet」
+      placeholder: 例：11/25 唔想行咁多路，想坐低飲咖啡
+    validations:
+      required: true
+
+  - type: textarea
+    id: must
+    attributes:
+      label: 有冇一定要保留嘅嘢？（可留空）
+      description: 例如「一定要去到 LEGOLAND」、「唔想早起」
+      placeholder: 例：香嵐渓一定要去
+
+  - type: dropdown
+    id: energy
+    attributes:
+      label: 嗰日想輕鬆定充實？
+      options:
+        - 輕鬆（少行路、多坐低）
+        - 一般
+        - 充實（行到盡）
+        - 冇所謂
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **第一次用？** 要開個免費 GitHub 帳戶（瀏覽器 1 分鐘，唔使裝 app），
+        之後再留言就自動登入，撳個制就得。
