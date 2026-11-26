@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本中部・關西 8 晚行程｜2026.11.21–11.29</title>
+<style>
+  :root{
+    --ink:#1c1c1a;
+    --ink-soft:#55554e;
+    --paper:#faf8f4;
+    --line:#ddd6c9;
+    --accent:#a8342a;
+    --accent-soft:#f2e6e2;
+    --gold:#8a7448;
+    --map:#2f5d7c;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    font-size:16px;line-height:1.75;letter-spacing:.01em;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:30px 22px 72px}
+
+  header{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:8px}
+  .kicker{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+  h1{
+    font-family:"Noto Serif JP","Hiragino Mincho ProN","Songti TC",serif;
+    font-size:31px;line-height:1.34;font-weight:600;margin:0 0 16px;letter-spacing:.02em;
+  }
+  .meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:13px;color:var(--ink-soft)}
+  .meta b{font-weight:600;color:var(--ink)}
+
+  h2{
+    font-family:"Noto Serif JP","Hiragino Mincho ProN","Songti TC",serif;
+    font-size:19px;font-weight:600;margin:46px 0 16px;padding-left:12px;
+    border-left:3px solid var(--accent);letter-spacing:.03em;
+  }
+  h3{font-size:15px;font-weight:600;margin:26px 0 6px}
+  p{margin:0 0 14px}
+  .lead{font-size:15px;color:var(--ink-soft)}
+
+  /* Google Maps 連結 */
+  a.map{
+    color:inherit;text-decoration:none;
+    border-bottom:1px dotted var(--map);
+    padding-bottom:.5px;
+    transition:background .15s;
+  }
+  a.map:hover{background:#e8eef2}
+  a.map::after{
+    content:"↗";font-size:.68em;vertical-align:super;
+    color:var(--map);margin-left:1px;letter-spacing:0;
+  }
+
+  .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:22px 0 8px}
+  .summary>div{background:var(--paper);padding:14px 14px 13px}
+  .summary dt{font-size:10.5px;letter-spacing:.16em;color:var(--gold);margin:0 0 5px}
+  .summary dd{margin:0;font-size:14.5px;font-weight:600;word-break:keep-all;line-height:1.5}
+
+  table{width:100%;border-collapse:collapse;margin:0 0 22px;font-size:14px}
+  caption{caption-side:top;text-align:left;font-size:12px;color:var(--ink-soft);padding-bottom:10px}
+  th,td{text-align:left;padding:11px 9px;vertical-align:top;border-bottom:1px solid var(--line)}
+  thead th{font-size:10.5px;letter-spacing:.16em;color:var(--gold);font-weight:600;border-bottom:1.5px solid var(--ink);white-space:nowrap}
+  tbody tr:last-child td{border-bottom:1.5px solid var(--ink)}
+  td.date{white-space:nowrap;font-weight:600;font-variant-numeric:tabular-nums;width:88px}
+  td.date span{display:block;font-weight:400;font-size:11px;color:var(--ink-soft);letter-spacing:.08em}
+  td.base{white-space:nowrap;font-size:13px;width:96px}
+  td.leg{font-size:12.5px;color:var(--ink-soft);line-height:1.6;width:172px}
+  .tag{display:inline-block;font-size:10.5px;letter-spacing:.1em;padding:1px 7px;border-radius:2px;background:var(--accent-soft);color:var(--accent);font-weight:600;margin-right:6px;vertical-align:1.5px}
+
+  .legend{font-size:12.5px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:10px;margin:-8px 0 0}
+  .legend a.map{font-size:12.5px}
+
+  .traps{background:#fff;border:1px solid var(--line);padding:2px 20px 8px;margin:0 0 22px}
+  .traps ol{padding-left:19px;margin:16px 0}
+  .traps li{margin:0 0 15px;font-size:14.5px}
+  .traps li:last-child{margin-bottom:8px}
+  .traps li b{color:var(--accent)}
+
+  .money td:last-child,.money th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .money tfoot td{font-weight:700;border-top:1.5px solid var(--ink);border-bottom:none;padding-top:13px}
+
+  .note{border-left:2px solid var(--gold);background:#fff;padding:13px 16px;font-size:13.5px;color:var(--ink-soft);margin:0 0 18px}
+  .note b{color:var(--ink)}
+
+  footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);font-size:11.5px;color:var(--ink-soft);letter-spacing:.06em}
+
+  /* ---------- 逐日流程圖 ---------- */
+  .tabbar{
+    position:sticky;top:0;z-index:20;display:flex;
+    overflow-x:auto;background:var(--paper);
+    border-bottom:1px solid var(--line);border-top:1px solid var(--line);
+    margin:0 0 22px;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .tabbar::-webkit-scrollbar{display:none}
+  .tab{
+    flex:0 0 auto;background:none;border:0;border-bottom:2px solid transparent;
+    padding:11px 15px 10px;font:inherit;font-size:13.5px;color:var(--ink-soft);
+    cursor:pointer;letter-spacing:.03em;line-height:1.25;text-align:center;
+  }
+  .tab span{display:block;font-size:10px;color:var(--gold);letter-spacing:.12em;margin-top:2px}
+  .tab[aria-selected="true"]{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+
+  .daytitle{font-size:16px;font-weight:700;margin:0 0 16px;line-height:1.45}
+  .daytitle span{font-weight:400;font-size:13px;color:var(--ink-soft);margin-left:10px;letter-spacing:.03em}
+  .day[hidden]{display:none}
+  .day{scroll-margin-top:54px}
+
+  .flow{margin:0 0 6px}
+  .node{display:grid;grid-template-columns:56px 22px 1fr;align-items:stretch}
+  .node .t{
+    font-size:12.5px;font-variant-numeric:tabular-nums;font-weight:600;
+    text-align:right;padding:7px 9px 0 0;letter-spacing:.01em;white-space:nowrap;
+  }
+  .node.move .t{font-weight:400;color:var(--ink-soft)}
+  .node .rail{position:relative;display:flex;justify-content:center;padding-top:10px}
+  .node .rail::before{
+    content:"";position:absolute;top:0;bottom:0;width:1px;background:#c9bfab;
+  }
+  .node:first-child .rail::before{top:10px}
+  .node:last-child .rail::before{bottom:auto;height:10px}
+  .node .dot{
+    position:relative;z-index:1;width:9px;height:9px;border-radius:50%;
+    background:var(--accent);box-shadow:0 0 0 3px var(--paper);
+  }
+  .node.move .dot{width:5px;height:5px;background:#b9b1a2;margin-top:2px}
+  .node .body{padding:4px 0 15px 12px}
+  .node:last-child .body{padding-bottom:0}
+  .place{font-size:15px;font-weight:600;line-height:1.5}
+  .node.move .leg{font-size:13px;color:var(--ink-soft);line-height:1.5}
+  .fnote{font-size:12.5px;color:var(--ink-soft);line-height:1.6;margin-top:1px}
+
+  @media (max-width:660px){
+    .wrap{padding:24px 17px 60px}
+    h1{font-size:26px}
+    .summary{grid-template-columns:repeat(2,1fr)}
+
+    table.itin{font-size:14px}
+    table.itin thead{display:none}
+    table.itin tbody tr{display:block;padding:16px 0 15px;border-bottom:1px solid var(--line)}
+    table.itin tbody tr:last-child{border-bottom:1.5px solid var(--ink)}
+    table.itin td{display:block;width:auto;border:none;padding:0}
+    table.itin td.date{font-size:15.5px;font-weight:700;margin-bottom:2px}
+    table.itin td.date span{display:inline;font-size:11.5px;font-weight:400;margin-left:9px;letter-spacing:.08em}
+    table.itin td.base{font-size:12px;color:var(--gold);letter-spacing:.06em;margin-bottom:7px}
+    table.itin td.base::before{content:"住宿 · "}
+    table.itin td.plan{font-size:14.5px;line-height:1.75}
+    table.itin td.leg{margin-top:9px;padding-top:8px;border-top:1px dashed var(--line);font-size:12.5px}
+
+    .money{font-size:13.5px}
+    .money td,.money th{padding:10px 5px}
+    .traps{padding:2px 15px 6px}
+
+    table.stack{font-size:14px}
+    table.stack thead{display:none}
+    table.stack tbody tr{display:block;padding:15px 0 14px;border-bottom:1px solid var(--line)}
+    table.stack tbody tr:last-child{border-bottom:1.5px solid var(--ink)}
+    table.stack td{display:block;border:none;padding:0;width:auto;white-space:normal}
+    table.stack td.base{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:3px}
+    table.stack td.base br{display:none}
+    table.stack td:nth-child(2){font-size:11.5px;color:var(--gold);letter-spacing:.06em;margin-bottom:9px}
+    table.stack td.leg{font-size:13px;line-height:1.7;color:var(--ink-soft)}
+    table.stack td.leg b{color:var(--ink);font-weight:700}
+
+    .node{grid-template-columns:47px 20px 1fr}
+    .node .t{font-size:12px;padding-right:7px}
+    .node .body{padding-left:10px}
+    .place{font-size:14.5px}
+    .tab{padding:10px 13px 9px;font-size:13px}
+  }
+
+  @media print{
+    body{background:#fff;font-size:10.5pt}
+    .wrap{max-width:none;padding:0}
+    h2{page-break-after:avoid;margin-top:26px}
+    tr{page-break-inside:avoid}
+    .traps li,.note{page-break-inside:avoid}
+    .traps{padding-bottom:2px}
+    h3{break-after:avoid}
+    a{color:inherit;text-decoration:none}
+    a.map::after{content:""}
+    a.map{border-bottom:none}
+    .tabbar{display:none}
+    .day[hidden]{display:block !important}
+    .day{page-break-before:auto}
+    .daytitle{page-break-after:avoid}
+    .node{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">Japan · Chubu &amp; Kansai</p>
+  <h1>名古屋・京都・大阪<br>8 晚 9 日</h1>
+  <div class="meta">
+    <span><b>2026.11.21（六）– 11.29（日）</b></span>
+    <span>關西入 · 中部走</span>
+    <span><b>去程 UO898</b> 11/21 11:50 HKG → 16:25 KIX</span>
+    <span><b>回程 UO685</b> 11/29 20:40 NGO → 00:30+1 HKG</span>
+    <span><b>2 人同行</b>（我＋妹妹）</span>
+    <span>全程公共交通</span>
+  </div>
+</header>
+
+<dl class="summary">
+  <div><dt>天數</dt><dd>8 晚 9 日</dd></div>
+  <div><dt>人數</dt><dd>2 人・ツイン</dd></div>
+  <div><dt>機場</dt><dd>KIX 入／NGO 走</dd></div>
+  <div><dt>預算</dt><dd>≈ HK$16,600 – 18,200（2 人）</dd></div>
+</dl>
+
+<div class="note" style="margin:18px 0 26px">
+  <b>📝 想改行程？</b><br><br>
+  妹妹（或者任何人）可以直接留低意見 —— 撳下面條 link，填個表，白會喺嗰度回覆並更新本頁。唔使裝 app，用瀏覽器就得（第一次要開個免費 GitHub 帳戶，一分鐘）。<br><br>
+  <b><a href="https://github.com/tomcheung99/trip-2611/issues/new?template=trip-change.yml" target="_blank" rel="noopener">→ 留低行程建議</a></b><br>
+  <a href="https://github.com/tomcheung99/trip-2611/issues" target="_blank" rel="noopener" style="font-size:.9em;opacity:.75">睇返之前所有人嘅建議</a>
+</div>
+
+<h2>行程</h2>
+
+<table class="itin">
+  <caption>住宿欄為當晚住宿城市；交通欄為實際車程與票價。</caption>
+  <thead>
+    <tr><th>日期</th><th>住宿</th><th>行程</th><th>交通</th></tr>
+  </thead>
+  <tbody>
+{{ROWS}}
+  </tbody>
+</table>
+
+<p class="legend">地點名稱有虛線底線的，點一下即開 Google Maps。</p>
+
+<h2>逐日流程</h2>
+
+<nav class="tabbar" role="tablist" aria-label="逐日行程">
+{{TABS}}
+</nav>
+
+<div class="days">
+{{PANELS}}
+</div>
+
+<h2>為甚麼這樣排</h2>
+
+<p class="lead">兩個日期是整條路線的骨架，其餘日子遷就它們。</p>
+
+<h3>11/27 由香嵐渓改成名古屋市區</h3>
+<p>原本 11/27（五）排香嵐渓紅葉，但要來回約 5 小時（寺本 → 名鉄名古屋 → 伏見 → 赤池 → 浄水 → 巴士 60 分）。家人話太遠，所以改成<b>名古屋市區一日</b>：老舖喫茶モーニング → 蓬萊軒ひつまぶし → 榮行街（PARCO＋SONY Store）→ RAKU SPA 天然溫泉，全日地鐵 1–2 站，最遠一段用溫泉的免費送迎バス。<b>香嵐渓的紅葉資料保留在下面「備用」段落</b>，想改返隨時可以插。</p>
+
+<h3>11/26 主題公園：LEGOLAND 取代 Ghibli</h3>
+<p>Ghibli Park 11 月分於 9/10 開賣，現已售罄，改去 <b>LEGOLAND Japan</b>（名古屋市港區金城ふ頭）。<b>2026 年 11 月 1–15 日全園維修休園</b>，11/16 重開；11/26 星期四 10:00–17:00，有「レゴランドでメリークリスマス」聖誕活動。浮動票價，前一日網上買最平。</p>
+
+<h3>東福寺揀平日早上</h3>
+<p>11/24 星期二 8:30 開門即到通天橋。與週末前往、同一地點排隊兩小時，是兩個世界。</p>
+
+<h2>注意</h2>
+
+<div class="traps">
+<ol>
+  <li><b>11/23 是日本勤労感謝の日</b>，連成 21–23 三連休。名古屋、京都酒店貴 1.5–2 倍，郊區巴士削班。行程已把城市日放在假期，郊區日放在平日。11/23 已改成<b>大阪市內輕鬆日</b>（新世界 → 難波 → 心斎橋，最遠 2 個地鐵站），假期人多但全部室內，唔使趕車。</li>
+  <li><b>京都 11/23–25 是全年最貴的三晚之一</b>（紅葉高峰 × 假期）。這幾晚的住宿要先訂，機票後訂。</li>
+  <li><b>11/27 榮駅 → RAKU SPA 的免費送迎バス一日只有 8 班</b>（栄駅發 10:00／11:30／13:00／14:30／15:50／17:20／18:50／20:20，回程 12:25／13:55／15:15／16:45／18:15／19:45，車程約 45 分）。行程排 14:30 去、18:15 返；錯過就要由自由ヶ丘駅行 20 分鐘或搭的士。</li>
+  <li><b>LEGOLAND 是浮動票價</b>：同一日早買平、遲買貴，窗口再加 ¥500。前一日網上買。</li>
+  <li><b>11/26 才是移動日。</b>大阪退房 → 新幹線 → 名古屋，行李寄名古屋駅儲物櫃，唔好帶去 LEGOLAND。11/23 大阪市內，行李留酒店。</li>
+  <li><b>京都国際マンガミュージアム 11/24 休館</b>（每月另有不定休），本來排 11/23；11/23 改咗大阪之後，漫畫館暫時未排 —— 想去就要另外插，開館 10:00–17:00，最後入館 16:30。</li>
+  <li><b>11/23 改咗大阪輕鬆日，原本嗰日嘅京都點暫時抽出：</b>伏見稲荷、漫畫館、錦市場、八坂の塔、いづ重、高台寺夜楓。11/24 仍然係京都日（東福寺／永観堂／南禅寺／嵐山）。想加返邊樣（例如 11/24 07:30 伏見稲荷，同東福寺同一條京阪線）話我知。</li>
+</ol>
+</div>
+
+<h2>每日起身時間</h2>
+
+<p class="leg">由行程第一個「定死時間」倒推，預留 45–60 分鐘梳洗＋早餐＋行去車站。日本 11 月下旬日出 <b>06:37–06:44</b>、日落 <b>16:41–16:50</b>。</p>
+
+<table class="stack">
+  <thead><tr><th>日期</th><th>起身 / 出門口</th><th>第一個定死時間</th><th>為咩</th></tr></thead>
+  <tbody>
+    <tr><td class="base">11/21 六</td><td class="leg"><b>06:45</b><br>08:15 去機場</td><td class="leg">11:50 起飛<br>09:50 到 HKG T2</td><td class="leg">香港段。用「屋企到機場 75 分鐘」做例子，你自己加減。</td></tr>
+    <tr><td class="base">11/22 日</td><td class="leg"><b>06:45</b><br>07:30</td><td class="leg">08:00 SÖT COFFEE<br>10:00 診所</td><td class="leg"><b>醫美日，一定唔可以遲。</b>遲到可能被取消時段，而 11/22–24 冇後備日。</td></tr>
+    <tr><td class="base">11/23 一</td><td class="leg"><b>07:45</b><br>08:50</td><td class="leg">09:00 千成屋珈琲</td><td class="leg">大阪輕鬆日。千成屋就在ジャンジャン横丁，行 5 分鐘就到，唔使趕。</td></tr>
+    <tr><td class="base"><b>11/24 二</b><br><span class="tag">最早</span></td><td class="leg"><b>05:45</b><br>06:50</td><td class="leg">07:00 新今宮駅</td><td class="leg">東福寺 <b>08:30 開門</b>，要第一批入通天橋。遲 30 分鐘就變排隊兩小時。</td></tr>
+    <tr><td class="base">11/25 三<br><span class="tag">最輕鬆</span></td><td class="leg"><b>08:15</b><br>09:30</td><td class="leg">09:45 新今宮駅<br>10:15 阪急うめだ</td><td class="leg">全日梅田。全程唯一可以遲起的一日。</td></tr>
+    <tr><td class="base"><b>11/26 四</b><br><span class="tag">最早</span></td><td class="leg"><b>05:45</b><br>06:45</td><td class="leg">07:00 退房</td><td class="leg">退房＋新幹線＋LEGOLAND。<b>前一晚一定要收好行李。</b></td></tr>
+    <tr><td class="base">11/27 五</td><td class="leg"><b>06:30</b><br>07:40</td><td class="leg">07:50 寺本駅</td><td class="leg">名古屋市區。由寺本出發 27 分到名鉄名古屋，唔使趕頭班車。</td></tr>
+    <tr><td class="base">11/28 六</td><td class="leg"><b>07:15</b><br>08:20</td><td class="leg">08:30 寺本駅</td><td class="leg">犬山。晚上食燒肉，可以慢慢來。</td></tr>
+    <tr><td class="base">11/29 日</td><td class="leg"><b>08:00</b><br>09:40</td><td class="leg">10:00 check out</td><td class="leg">名駅 → 大須 → 上機。10:55 <b>ル ラボ</b>（名古屋駅直結）買香水＋印 label，記住即日辦免稅，然後先落大須。</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>三個實務提醒：</b><br><br>
+  <b>① 只有兩日要摸黑起身：11/24 同 11/26（05:45）。</b>呢兩日日出 06:40，出門口時天未光。<br><br>
+  <b>② 早餐自己搞。</b>05:45 起身，酒店早餐（通常 07:00 後）未開。<b>前一晚在便利店買定</b>飯糰、麵包、果汁。11/24 同 11/26 兩次。<br><br>
+  <b>③ 睡眠排法。</b>11/24、11/26 前一晚 <b>22:30 上床</b>。11/25 全日梅田可以行到 21:00，但唔好再夜 —— 翌日 11/26 要 05:45 起。<br><br>
+  <b>④ 帶眼罩耳塞。</b>11/26–29 住 Tabist 寺本，共用浴室、隔音一般。
+</div>
+
+<h2>住宿（已訂）</h2>
+
+<table class="stack">
+  <thead><tr><th>酒店</th><th>日期</th><th>房型</th><th>注意</th></tr></thead>
+  <tbody>
+{{HOTEL_ROWS}}
+  </tbody>
+</table>
+
+<div class="note">
+  <b>兩間都已訂，以下為結構性提醒。</b><br><br>
+  <b>① 冇咗京都住宿。</b>京都只剩 11/24 一次 day trip（東福寺／永観堂／南禅寺／嵐山），單程約 50 分鐘；11/23 改咗大阪市內（難波・心斎橋，2 個地鐵站）。11/25 全日梅田 —— 新今宮 18 分鐘直達，唔使趕車，行到 21:00 才走都得。<br><br>
+  <b>② 知多・寺本係住宅區。</b>晚上冇乜嘢食，建議在名古屋吃完才回去，或便利店解決。好處：去中部機場 25 分鐘、去常滑 10 分鐘、去名古屋 27 分鐘。<br><br>
+  <b>③ 共用浴室及廁所。</b>11/26–29 三晚要同妹妹共用衛浴，而且 <b>15:00–21:00 才受理 check-in</b>——11/26 由 LEGOLAND 返到去約 18:10，時間夠。
+</div>
+
+<h2>門票與預約</h2>
+
+<table class="stack">
+  <thead><tr><th>項目</th><th>狀況</th><th>要做的事</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base">去程航班<br>11/21（六）</td>
+      <td><b>已訂</b>：UO898 11:50 → 16:25（KIX T1）</td>
+      <td class="leg">香港快運 T2 U 段辦理登機。起飛前 60 分鐘截龍，<b>10:20 前到 T2</b>。行李限額按票種，記得起飛前 48 小時網上 check-in。</td>
+    </tr>
+    <tr>
+      <td class="base">回程航班<br>11/29（日）</td>
+      <td><b>已訂</b>：UO685 20:40 → 00:30+1（NGO T2 → HKG T1）</td>
+      <td class="leg">「無憂飛」票種。<b>19:40 截龍</b>，17:50 前到 T2。<b>11/30 凌晨 00:30 才抵港</b>——機場快線已收，要 N29 通宵巴士或的士。</td>
+    </tr>
+    <tr>
+      <td class="base">LEGOLAND Japan<br>11/26（四）</td>
+      <td><b>開園確認</b>：11/26（四）10:00–17:00</td>
+      <td class="leg">1DAY パスポート 大人 <b>¥4,900–7,800</b>（浮動價，11/26 平日偏低）。<b>前一日網上買最平</b>，現場窗口每張加 ¥500 發券手續費。11/1–11/15 全園維修休園，11/16 重開；11/20 起有聖誕活動。</td>
+    </tr>
+    <tr>
+      <td class="base">海遊館<br>11/22（日）</td>
+      <td>現場或網上買</td>
+      <td class="leg">大人 <b>¥2,700–3,200</b>（浮動價）。天保山，地鐵中央線大阪港駅步行 5 分。10:00 開館，建議 09:30 到排隊。</td>
+    </tr>
+    <tr>
+      <td class="base">京都国際<br>マンガミュージアム<br><span class="tag">未排</span></td>
+      <td><b>11/24 休館</b>；11/23 改咗大阪</td>
+      <td class="leg">大人 <b>¥1,200</b>。10:00–17:00，最後入館 16:30。地下鐵烏丸御池駅 2 分。元龍池小學校改建，可坐草地看漫畫。</td>
+    </tr>
+    <tr>
+      <td class="base">新幹線<br>11/26 大阪→名古屋</td>
+      <td>可即場買</td>
+      <td class="leg">新今宮→新大阪→名古屋，約 1 小時 15 分，¥5,940 自由席。行李寄名古屋駅 locker，再搭あおなみ線去金城ふ頭。</td>
+    </tr>
+    <tr>
+      <td class="base">あつた蓬莱軒<br>松坂屋店<br>11/27（五）午餐</td>
+      <td>唔接受預約<br>要排隊</td>
+      <td class="leg">松坂屋名古屋店<b>南館 10F</b>，矢場町駅 2 分。<b>平日 11:00–14:30（L.O.）</b>，火曜休 —— 11/27 星期五開。ひつまぶし <b>¥4,600 起</b>。原則上要全員到齊才入座，混雜時會提早截龍，11:00 開門前到最好。</td>
+    </tr>
+    <tr>
+      <td class="base">RAKU SPA<br>GARDEN 名古屋<br>11/27（五）</td>
+      <td>唔使預約</td>
+      <td class="leg">平日フリータイム入館 大人 <b>¥2,100</b>（包毛巾、館內着、岩盤浴）；90 分コース ¥1,050 但要另加毛巾 ¥330＋館內着 ¥220。<b>栄駅 10A 出口免費送迎バス</b>約 45 分，回程 18:15／19:45。金曜開到翌日 8:00。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>LEGOLAND 三個易中招位：</b>① <b>不定休</b>——2026 年 11 月 1–15 日全園維修休園，去之前一定睇官方營業日曆；② 浮動票價，網上早買最平，窗口 +¥500；③ 由名古屋駅搭あおなみ線各駅停車 24 分（急行 17 分），到金城ふ頭再行 10 分鐘，唔係出站即到。
+</div>
+
+
+<h2>柏青哥（パチンコ）初學者指南</h2>
+
+<p class="lead">新世界・難波一帶店最密，酒店行 5 分鐘就到。第一次玩，跟住下面做。</p>
+
+<table class="stack">
+  <thead><tr><th>步驟</th><th>做咩</th><th>注意</th></tr></thead>
+  <tbody>
+    <tr><td class="base">1 入店</td><td>直接推門入，冇入場費、冇會員制</td><td class="leg">18 歲以上。外國人有機會被要求出示<b>護照</b>，帶住。</td></tr>
+    <tr><td class="base">2 揀台</td><td>搵標示「<b>1</b>」的台（1パチ），¥1／粒</td><td class="leg">標準「4パチ」是 ¥4／粒，同一筆錢只玩得四分之一時間。新手一定揀 1パチ。</td></tr>
+    <tr><td class="base">3 換玉</td><td>機旁入鈔口插 <b>¥1,000 紙幣</b>，按「球貸」</td><td class="leg"><b>只收現金</b>，唔收信用卡、唔收電子錢包、唔收硬幣。先換 ¥3,000 試水。</td></tr>
+    <tr><td class="base">4 發射</td><td>右邊旋鈕順時針轉，控制力度</td><td class="leg">目標唔係打中嘢，係調到一個力度，令玉穩定跌落中央的「始動口」。通常約三分二圈。</td></tr>
+    <tr><td class="base">5 中獎</td><td>玉落入始動口 → 螢幕抽獎 → 大當り</td><td class="leg">新手揀 <b>1/99 型</b>（輕量機），中獎密、每局有嘢睇。1/319 型中得大但好悶。</td></tr>
+    <tr><td class="base">6 換景品</td><td>按計數機 → 拿記錄去景品櫃檯</td><td class="leg">店內<b>唔會畀現金</b>。換「特殊景品」（金／銀色小牌）。</td></tr>
+    <tr><td class="base">7 換錢</td><td>拿特殊景品去<b>店外</b>的「景品交換所」</td><td class="leg">通常喺店側小巷，窗口細細。呢個係日本「三店方式」，合法。匯率含 5–10% 手續費。</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>三個第一次一定中招位：</b><br><br>
+  <b>① 唔好帶卡走。</b>如果機台用 IC 卡，離場前要在出口附近的「精算機」退返餘額，唔係就冇咗。<br><br>
+  <b>② 大部分店內可以食煙。</b>空氣好差、音量極大。你皮膚同身體要留意，玩 30–45 分鐘就夠，唔好坐足兩小時。想避煙可揀標明「<b>禁煙</b>」或設「分煙室」的店。<br><br>
+  <b>③ 唔好當投資。</b>1パチ 只係買體驗。預 ¥3,000–5,000 當入場費，玩完就走。
+</div>
+
+<h2>想去睇的館</h2>
+
+<table class="stack">
+  <thead><tr><th>館</th><th>位置</th><th>價錢・時間</th><th>為咩去</th></tr></thead>
+  <tbody>
+    <tr><td class="base">海遊館</td><td>大阪・天保山</td><td>¥2,700–3,200<br>10:00–20:00</td><td class="leg">世界最大級水族館，鯨鯊主缸。已排 11/22。</td></tr>
+    <tr><td class="base">京都国際<br>マンガミュージアム</td><td>京都・烏丸御池</td><td>¥1,200<br>10:00–17:00</td><td class="leg">30 萬冊漫畫，元小學校改建，可坐草皮睇。11/23 改咗大阪，暫未排；<b>11/24 休館</b>。</td></tr>
+    <tr><td class="base">リニア・鉄道館</td><td>名古屋・金城ふ頭</td><td>¥1,000 起</td><td class="leg">LC 磁浮、0 系新幹線實車。同 LEGOLAND 同一個站，11/26 玩完可以過去。</td></tr>
+    <tr><td class="base">名古屋市科学館</td><td>名古屋・伏見</td><td>¥1,000（含天象館）<br>09:30–17:00</td><td class="leg">內徑 35m 天象館，世界最大級。極寒ラボ −30℃、放電ラボ 120 萬伏。11/29 上午已排 ル ラボ＋大須，想去就排 11/27 下午或 11/28。</td></tr>
+    <tr><td class="base">トヨタ産業<br>技術記念館</td><td>名古屋・栄生</td><td>¥500–1,000</td><td class="leg">豐田織機起家的紡織機到汽車生产线，機械迷會鍾意。</td></tr>
+    <tr><td class="base">京都鉄道博物館</td><td>京都・梅小路</td><td>¥1,500</td><td class="leg">53 輛實車、SL 蒸氣機關車試乘。如果 11/24 想換走嵐山。</td></tr>
+  </tbody>
+</table>
+
+
+
+<h2>醫美：11/22（日）・心斎橋</h2>
+
+<div class="note" style="border-color:#b23;background:#fff5f5">
+  <b>🔴 重要更正（2026/11/21 晚）：ポテンツァ 唔可以在大阪心斎橋做。</b><br><br>
+  SBC 官網把 ポテンツァ 同 カデッセイ 標為 <b>「NEO Skin 限定施術」</b>，而 <b>SBC NEO Skin Clinic 全日本只有 4 間：銀座・恵比寿・名古屋・神戸</b> —— <b>大阪心斎橋院冇 Potenza</b>。<br><br>
+  <b>✅ 11/22 改用：シルファームX（RF 微針）＋ ピコトーニング。</b><br>
+  シルファームX 同 Potenza 同屬射頻微針，打車廂型凹洞＋毛孔；差別係 Potenza 有 drug delivery（針孔導入），シルファーム 係針後塗藥。效果接近，價錢平一半。<br><br>
+  <b>價錢：</b>シルファームX 全顔 ≈ <b>¥25,000</b>（藥劑另計）＋ ピコトーニング 初回 <b>¥7,800</b> ≈ 合計 <b>¥33,000–38,000</b>（原計劃 ¥68,300）。<br><br>
+  <b>❌ 唔好揀：</b>ポテンツァ（心斎橋冇）、カデッセイ（同樣 NEO Skin 限定）、フラクショナルCo2レーザー（色沉風險 3 倍）、ピコフラクショナル（你以紅印為主，要トーニング唔係フラクショナル）。
+</div>
+
+
+
+<p class="lead">你四項：<b>冰錐型（icepick）、車廂型（boxcar）、毛孔粗大、暗瘡印（紅印為主）</b>。冇 rolling 型 —— 所以 <b>subcision 你唔需要</b>。四項要用四種武器，唔可以一部機搞完。</p>
+
+<table class="stack">
+  <thead><tr><th>你的問題</th><th>正確武器</th><th>為什麼</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>冰錐型</b><br>（深窄、針頭狀）</td>
+      <td><b>TCA CROSS</b></td>
+      <td class="leg">日本診所寫得最白：「アイスピック型に最も効果を発揮します」。射頻微針的針打不到冰錐型那種又窄又深的管道。<b>留返香港做</b>，理由見下。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>車廂型</b><br>（方形、底平）</td>
+      <td><b>ポテンツァ＋マックーム</b></td>
+      <td class="leg">研究：車廂型 CO2 雷射 66% vs 微針 54%，但 <b>CO2 的色素沉澱風險係微針 3 倍</b>。你膚色易變黑 → 揀微針。マックーム 是 PLLA 藥劑，專門填凹。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>毛孔粗大</b><br>（鼻翼、兩頰）</td>
+      <td><b>ポテンツァ ボトックス導入<br>／S25 チップ</b></td>
+      <td class="leg">你毛孔主因是皮脂（9 月報告皮脂 11，油性）。肉毒打入真皮層抑制皮脂腺 → 收毛孔。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>暗瘡印</b><br>（紅印為主）</td>
+      <td><b>ピコトーニング</b><br>＋口服トラネキサム酸</td>
+      <td class="leg">暗瘡印分兩種病，打法完全唔同 —— 見下面。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>11/22 組合（已更正）：シルファームX 全顔（車廂型＋毛孔）＋ ピコトーニング（暗瘡印）。總額約 ¥33,000–38,000。</b>
+</div>
+
+<h3>暗瘡印：紅印 vs 啡印，兩種病</h3>
+
+<table class="stack">
+  <thead><tr><th>類型</th><th>外觀</th><th>成因</th><th>打法</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>紅印</b> PIE</td>
+      <td class="leg">平坦、粉紅／鮮紅、按下去會白一下再回復紅</td>
+      <td class="leg">炎症後微血管擴張（血管性）</td>
+      <td class="leg"><b>ピコトーニング Genesis 1064nm</b>／ルメッカ IPL／Vビーム。唔係靠美白。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>啡印</b> PIH</td>
+      <td class="leg">平坦、啡／灰褐、邊界模糊</td>
+      <td class="leg">炎症後黑色素沉澱（色素性）</td>
+      <td class="leg"><b>ピコトーニング</b>＋<b>口服トラネキサム酸</b>＋外用ハイドロキノン（2 週後才開始）。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>你兩樣都有。</b>11/14 照片顯示兩頰下頜<b>以紅印為主</b>；但 9 月儀器報告「黑色素 30（Bad）、黃褐斑色素 24（Bad）、膚色偏差 5（Bad）」，底層色素亦重。<b>兩條線都要打。</b><br><br>
+  <b>順序原則：</b>紅印／敏感明顯 → 先做熱／血管治療。啡印明顯 → 先做色素治療。你以紅印為主，所以揀 <b>ピコトーニング Genesis 模式</b>，唔好一開始就揀ピコフラクショナル。
+</div>
+
+<h3>11/22 實際會做的：湘南美容クリニック 大阪心斎橋院</h3>
+
+<div class="note">
+  <b>揀佢的唯一原因：有真人中文翻譯，全程陪同。</b>官網明寫「配有專屬的中文翻譯工作人員」，該翻譯曾任職中國三甲醫院內科／婦產科 7 年，有醫學背景。事前溝通、醫生面診、施術過程都可全程陪同。<br><br>
+  <b>⚠️ 部分日期冇翻譯在崗 —— 要用微信（WeChat）提前預約翻譯出勤日。呢一步唔可以漏。</b>
+</div>
+
+<table class="stack">
+  <thead><tr><th>項目</th><th>價錢</th><th>備註</th></tr></thead>
+  <tbody>
+    <tr><td class="base">ポテンツァ 全顔 1 回</td><td class="leg"><b>¥25,000</b><br>5 回 ¥99,000</td><td class="leg">基本機台費</td></tr>
+    <tr><td class="base">【ニキビ跡】ポテンツァ<br>マックーム導入 CP-25 全顔<br>麻酔付</td><td class="leg"><b>¥60,500</b></td><td class="leg"><b>当日施術OK。</b>你車廂型＋毛孔的主菜（PLLA 填凹）</td></tr>
+    <tr><td class="base">【皮脂抑制】ポテンツァ<br>ボトックス 25 単位 CP-25 全顔</td><td class="leg"><b>¥60,500</b></td><td class="leg">針對毛孔＋出油。問可否同マックーム同日分區做</td></tr>
+    <tr><td class="base">ピコトーニング（顔）</td><td class="leg"><b>¥7,800</b></td><td class="leg">暗瘡印（紅＋啡）。零 downtime，當日可化妝</td></tr>
+    <tr><td class="base">ピコフラクショナル<br>（毛穴・ニキビ跡）</td><td class="leg"><b>¥7,800</b></td><td class="leg">質感／毛孔。刺激性比トーニング高，紅印為主就唔好揀呢個</td></tr>
+  </tbody>
+</table>
+
+<table class="stack">
+  <thead><tr><th>診所資料</th><th></th></tr></thead>
+  <tbody>
+    <tr><td class="base">地址</td><td class="leg">大阪市中央区心斎橋筋 2-7-18 プライムスクエア心斎橋 <b>10F</b></td></tr>
+    <tr><td class="base">交通</td><td class="leg">御堂筋線「心斎橋駅」4-B 出口 徒歩 4 分／千日前線「なんば駅」14 番出口 徒歩 7 分</td></tr>
+    <tr><td class="base">診療時間</td><td class="leg"><b>9:00–18:00（不定休）</b>—— 月火水木金土日祝全部同一時間，<b>星期日開，正好你 11/22</b></td></tr>
+    <tr><td class="base">電話</td><td class="leg"><b>0120-5489-93</b>（24 小時）</td></tr>
+    <tr><td class="base">付款</td><td class="leg">VISA／Master／JCB／AMEX／Diners／<b>銀聯</b>／醫療貸款</td></tr>
+    <tr><td class="base">外語</td><td class="leg">英語＋北京語（官方登記）。中文翻譯需微信預約</td></tr>
+  </tbody>
+</table>
+
+<p><b>次選：TCB 東京中央美容外科 心斎橋院</b> —— 南船場 4-4-10 辰野心斎橋ビル 4F、心斎橋駅 1 分、<b>9:00–19:00 日日開</b>、ポテンツァ <b>¥29,700</b>、ダーマペン4 ¥19,800。有英語版同簡體版官網，但店內職員未必即時有中文對應，要靠官網翻譯。</p>
+
+<div class="note">
+  <b>老實講兩句：</b>湘南同 TCB 都係大型連鎖 —— 好處係外語、日日開、價錢平、當日施術；壞處係流水作業、推銷多、醫生面診時間短。<br><br>
+  本地皮膚科院（クリニーク大阪心斎橋、トキコクリニック）技術較專，價錢亦未必貴，但<b>完全冇外語對應</b>，只靠翻譯 app 硬碰 —— 你要接受「講唔清楚、聽唔明風險」才去。你一個人去，先用湘南。
+</div>
+
+<h3>⚠️ 但 Potenza 同ピコ唔一定可以同日</h3>
+
+<div class="traps">
+  <ol>
+    <li><b>診所政策唔一致。</b>はなふさ皮膚科明確寫「<b>ポテンツァ後は 2 週間から 2 ヶ月空けてから</b>トーニングが可能」。亦有診所同日做，只降低強度、分開部位。湘南官網寫マックーム「当日施術OK」，但冇明寫可同ピコ同日。</li>
+    <li><b>所以要問清楚。</b>如果唔得，11/25 傍晚唔順路（11/25 全日梅田；梅田 → 心斎橋 6 分，但湘南 18:00 收，趕唔切）。真正後備係 <b>11/22 下午 14:00 再入一次</b>，或者改 11/24 傍晚（要 16:00 離開嵐山）。</li>
+    <li><b>口服藥當日就開。</b>叫醫生開 <b>トラネキサム酸（傳明酸）</b>，帶返香港食。對紅印、啡印、黃褐斑底同時有效，零 downtime。順便問有無外用ハイドロキノン（2 週後才開始用）。</li>
+  </ol>
+</div>
+
+<h3>預約要問的問題（照抄）</h3>
+
+<div class="note">
+  <b>①</b> 11月22日（日）に<b>中国語通訳</b>の勤務はありますか？（WeChat でも可）<br><br>
+  <b>②</b> カウンセリングと施術を<b>同日</b>で受けられますか？<br><br>
+  <b>③</b> ニキビ跡は<b>アイスピック型</b>と<b>ボックスカー型</b>、あと<b>毛穴の開き</b>と<b>赤いニキビ跡（PIE）</b>があります。ポテンツァの<b>マックーム CP-25</b> と<b>ピコトーニング</b>で対応できますか？<br><br>
+  <b>④</b> <b>ポテンツァとピコトーニングを同日</b>にできますか？<br><br>
+  <b>⑤</b> <b>トラネキサム酸（内服）</b>を処方していただけますか？<br><br>
+  <b>帶護照。</b>預 ¥75,000–90,000（マックーム ¥60,500＋ピコ ¥7,800＋初診料）。
+</div>
+
+<h3>🔴 為什麼冰錐型要留返香港做</h3>
+
+<div class="traps">
+  <ol>
+    <li><b>TCA CROSS 結痂一整星期。</b>凹洞會結白色痂皮，5–7 日才甩。你 11/24 嵐山、11/26 LEGOLAND 兩日戶外（11/23 大阪室內、11/25 全日梅田室內、11/27 已改名古屋市區，正好前後做緩衝）—— <b>痂皮＋紫外線＝色素沉澱</b>。你膚色偏偏易變黑。</li>
+    <li><b>一次只改善約 20%。</b>標準 5 次以上、間隔 4–8 週。旅行做一次，回港又要重頭排。</li>
+    <li><b>大阪做 TCA 的專科診所星期日全部休息。</b>トキコクリニック 心斎橋（日曜・祝日休）、はなふさ なんば（土日祝休）。你 22–24 之中只有 11/24 星期二，但你當日在京都。</li>
+  </ol>
+</div>
+
+<h3>如果你堅持要在日本做 TCA CROSS</h3>
+
+<table class="stack">
+  <thead><tr><th>診所</th><th>時間</th><th>價錢</th></tr></thead>
+  <tbody>
+    <tr><td class="base">トキコクリニック<br>心斎橋院</td><td class="leg">9:45–18:00<br><b>日曜・祝日休</b><br>心斎橋駅 3 番出口 2 分</td><td class="leg">おためし 3 ヶ所 <b>¥11,000</b>／両頬 ¥49,500／顔全体 ¥66,000。初診 ¥3,300。<b>官網明確話アイスピック型・ボックスカー型 → 用 TCA。</b>唯一可行時段：11/24 16:30（趕，收 18:00）。<b>無外語對應。</b></td></tr>
+    <tr><td class="base">江坂はなふさ<br>皮膚科</td><td class="leg">吹田市・江坂駅</td><td class="leg">10 箇所まで ¥11,000／11–20 箇所 ¥22,000／両頬 ¥44,000／全顔 ¥55,000。初診 ¥1,100。<b>要查星期日安排。</b></td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>我的建議：TCA CROSS 完全留返香港做。</b>香港唔少診所有 TCA CROSS，價錢同日本相若（10 個位 ¥11,000 ≈ HK$580），而且你可以留在家七日唔出街、唔曬太陽。日本做一次回港又要重排，仲要帶住痂皮行五日紅葉 —— 唔值得。
+</div>
+
+<h3>做完要拿的施術記錄</h3>
+
+<div class="note">
+  <b>機器名（POTENZA 4／Prime）・チップ型號（マックーム CP-25／S25／CP25）・針深度（mm）・能量（W）・總發數（shots）・導入藥劑・麻醉方式・有無同時做ピコ</b><br><br>
+  回港做 TCA CROSS 時，醫生要知你車廂型已經做過幾次微針，才決定 TCA 濃度同間隔。
+</div>
+
+<h3>術後 3 日</h3>
+
+<div class="note">
+  <b>11/22 當晚：</b>輕紅、微腫，通常 1–2 日退。唔好飲酒、唔好焗桑拿、唔好浸溫泉。<b>唔好去柏青哥</b>（店內全煙）—— 已改排 11/21 晚。<br><br>
+  <b>11/23–27：</b>純物理防曬 SPF50+ PA++++，每 2 小時補。帽＋口罩。避開 11:00–14:00。<br><br>
+  <b>11/27 排了 RAKU SPA 溫泉（距 11/22 施術第 5 日）。</b>皮膚科一般建議 1 星期內唔好浸溫泉／岩盤浴／焗桑拿。想穩陣：出發前問一問診所；或者只沖涼、唔好長時間浸、唔入桑拿房。<br><br>
+  <b>回港後 2 週：</b>嚴格防曬。可開始計劃 TCA CROSS（要等皮膚完全退紅）。
+</div>
+
+<h2>IEM／耳機購物</h2>
+
+<p class="lead">兩間店都係日本最大便攜音響連鎖 e☆イヤホン，任試任聽，中古存貨深。行路就到。</p>
+
+<table class="stack">
+  <thead><tr><th>店</th><th>地址・時間</th><th>排法</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base">e☆イヤホン<br>大阪日本橋本店</td>
+      <td>浪速区日本橋 5-9-19<br><b>11:00–20:00</b>・年中無休<br>買取受付至 19:30</td>
+      <td class="leg">由新世界酒店步行約 15 分鐘。已排 <b>11/22 全日</b>。11/25 而家全日梅田，唔再返呢度（想食 5% 折要另約，見下）。</td>
+    </tr>
+    <tr>
+      <td class="base">e☆イヤホン<br>名古屋大須店</td>
+      <td>中区大須 3-30-60 大須301ビル <b>2F</b><br><b>11:00–20:00</b>・年中無休</td>
+      <td class="leg">名古屋駅搭地鐵鶴舞線到「大須観音」8 分鐘。已排 <b>11/29 12:00</b>，上機前最後試聽。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>兩個慳錢位，時機好重要：</b><br><br>
+  <b>① 中古 5% off 在「5」字日。</b>每月 5、15、25 日中古貨 5% 折。<b>11/25（三）正是 25 日</b>，但你當日全日梅田。兩個做法：(a) <b>11/22 試完直接買</b>，冇 5%；(b) <b>11/25 朝早 10:00 先落日本橋 40 分鐘</b>（梅田 → なんば 9 分 → 行 15 分）再入梅田，食到 5%。你揀。<br><br>
+  <b>② 中古有 7 日無條件退貨。</b>買錯聲、戴唔舒服，7 日內可以退。所以 11/22 買，11/29 走之前都仍然在退貨期內 —— 買得放心。<br><br>
+  <b>③ 試聽禮儀：</b>直接同店員講「試聴したいです」，佢會畀你耳膠套同消毒。自己帶耳膠更快。試完放返原位，貴價機要問一問先拿。
+</div>
+
+<h3>按你口味試（空氣感、透明、細節、女聲甜）</h3>
+
+<table class="stack">
+  <thead><tr><th>型號</th><th>品牌</th><th>為咩啱你</th></tr></thead>
+  <tbody>
+    <tr><td class="base">HS2000MKIII</td><td>Acoustune</td><td class="leg">日本製，可換腔體。空氣感、殘響最強的一批，高音延伸好、背景黑。</td></tr>
+    <tr><td class="base">IER-M9</td><td>Sony</td><td class="leg">中性偏亮、分離度高，女聲位置清楚。舞台監聽取向，唔暖唔厚。</td></tr>
+    <tr><td class="base">A8000</td><td>final</td><td class="leg">鈹振膜，解析力同瞬態極快，透明感強。低頻量少，啱你口味。</td></tr>
+    <tr><td class="base">To Go! 334</td><td>FitEar</td><td class="leg">女聲甜的經典。中頻密度高、人聲貼耳。價錢貴，但值得試一次做基準。</td></tr>
+    <tr><td class="base">ATH-IEX1</td><td>Audio-Technica</td><td class="leg">雙動圈同軸，高音空氣感好，日本製。中古價差價大，值得尋。</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>已經有 MOONDROP 流星，唔需要再試 Meteor 系。</b>上面五隻係「另一個方向」的基準點 —— 試完你就知自己鍾唔鍾意日本調音。<b>唔好試暖厚暗的（JVC 木振膜、Campfire 部分型號），你會覺得濁。</b>
+</div>
+
+<h2>咖啡</h2>
+
+<p class="lead">以下每間都排在你行程點上，唔使特登繞路。全部係自家焙煎／スペシャルティ，唔係連鎖。</p>
+
+<table class="stack">
+  <thead><tr><th>店</th><th>位置・時間</th><th>排法・為咩去</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>SÖT COFFEE<br>ROASTER 心斎橋</b></td>
+      <td class="leg">中央区南船場 3-7-31<br>コーナンビル 1F<br><b>8:00–18:00</b><br>心斎橋駅 311m</td>
+      <td class="leg"><b>11/22 08:00</b>（做完先返診所 10:00）。2026/7/28 新開，關西第 4 間。豆曾獲美國 Coffee Review 世界第 3；2026/5 取得 B Corp 認證。心斎橋筋北商店街行 1 分鐘。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>ABOUT US COFFEE<br>伏見稲荷</b></td>
+      <td class="leg">伏見区深草稲荷鳥居前町 22-15<br><b>8:00–17:00</b>（每日）<br>075-644-6680</td>
+      <td class="leg"><b>11/24 早上</b>（如加伏見稲荷 07:30，行完千本鳥居即刻飲；11/23 改咗大阪後冇再排）。2019 開業，店主沢井靖成，埃塞俄比亞豆 2022 年東京 Coffee Collection 冠軍。有戶外座位。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>WEEKENDERS<br>COFFEE</b></td>
+      <td class="leg">京都市中京区<br>（富小路通）</td>
+      <td class="leg"><b>原本 11/23 下午</b>，錦市場／烏丸御池之間。京都淺煎代表，町家焙煎所。想飲淺焙、果酸型就去呢間。11/23 改咗大阪，暫未排；11/24 由嵐山返京都駅前可順路。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>% Arabica 嵐山</b><br>／<b>パンとエスプレッソと<br>嵐山庭園</b></td>
+      <td class="leg">右京区嵯峨天龍寺<br>芒ノ馬場町 45-15<br><b>8:00–18:00</b>（LO 17:00）</td>
+      <td class="leg"><b>11/24 嵐山</b>。% Arabica 睇河景；隔鄰「パンとエスプレッソと」係築 210 年京都府指定文化財邸宅改建，有庭園。<b>11 月下旬紅葉，兩間都會排隊。</b></td>
+    </tr>
+    <tr>
+      <td class="base"><b>TRUNK COFFEE<br>高岳本店</b></td>
+      <td class="leg">名古屋市東区<br>（高岳）</td>
+      <td class="leg"><b>11/26–27 其中一個傍晚</b>。名古屋最出名的自家焙煎，國際賽常客。<b>由寺本過去要先返名古屋再轉地鐵，問我幫你算。</b></td>
+    </tr>
+    <tr>
+      <td class="base"><b>KANNON COFFEE<br>大須店</b></td>
+      <td class="leg">中区大須 2-17-25<br><b>11:00–19:00</b>・無休<br>大須観音駅 4 分<br>052-201-2588</td>
+      <td class="leg"><b>11/29 13:35</b>（大須最後一杯，14:10 返名古屋駅）。大須仁王門通。招牌鯱鉾クッキー、焦糖拿鐵。舖頭細，買完行。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>丸福珈琲店</b><br>（可選）</td>
+      <td class="leg">中央区心斎橋筋 1 丁目<br>（本店）</td>
+      <td class="leg"><b>11/21 或 11/22</b>。1948 年創業，大阪昭和喫茶代表。Probat 12kg＋5kg 自家焙煎機就在吧檯後。中深焙、堅果朱古力調。<b>想試「舊大阪」就來，唔係スペシャルティ路線。</b></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>⚠️ 你差兩日就撞到一個大展。</b>「<b>NAGOYA COFFEE FESTIVAL</b>」2026 年 <b>11/21・22</b> 在ノリタケの森舉行，有 Raw Sugar Roast（東京）、COFFEE COUNTY（久留米）、AKITO COFFEE（甲府）、ETHICUS（靜岡）等 23 組。但你 11/21 16:25 才落關西機場、11/22 在心斎橋做臉 —— <b>撞唔到</b>。記住個名，下次留意。
+</div>
+
+<div class="note">
+  <b>買豆帶返香港：</b>日本焙煎豆一般標明焙煎日，<b>買焙煎後 2 週內的</b>最新鮮。手提行李帶返（液體限制唔關事，粉狀／豆狀冇問題）。<b>SÖT、ABOUT US COFFEE 兩間都有賣豆</b>，比香港便宜約 3–4 成，而且香港買唔到。
+</div>
+
+<h2>拉麵</h2>
+
+<div class="note">
+  <b>⚠️ 你有 IBS，所以呢一節要睇清楚。</b><br><br>
+  <b>安全：</b>澄んだ醤油／塩／鶏だし／貝だし（清湯系）。<br>
+  <b>危險：</b>濃厚豚骨、鶏白湯、二郎系（高脂）；台湾ラーメン／まぜそば（辣＋蒜＋油，三重打擊）。<br><br>
+  點菜時講：<b>「あっさりでお願いします」</b>（清淡啲）／<b>「油少なめ」</b>（少油）／<b>「麺少なめ」</b>（少麵）。<b>湯底唔好飲晒</b> —— 大部分鈉同油都在湯裡。
+</div>
+
+<table class="stack">
+  <thead><tr><th>店</th><th>位置・時間</th><th>點解・點叫</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>麺屋 丈六<br>なんば店</b><br><span class="tag">已排 11/22</span></td>
+      <td class="leg">中央区難波千日前 6-16<br>06-6643-6633<br>午 11:30–15:00／晚 18:00–21:00<br><b>星期三休</b>・8 個吧檯位</td>
+      <td class="leg">高井田系中華そば。湯色黑到發亮，但後味意外清爽 —— 唔算濃厚。中華そば ¥1,000，加味玉 ¥100。<b>排隊名店</b>，13:00 去要有心理準備等 20–30 分鐘。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>友愛亭</b></td>
+      <td class="leg">浪速区日本橋 4-12-1<br>旭日旅行ビル 1F</td>
+      <td class="leg">就在でんでんタウン電器街旁邊，11/22 行去 e☆イヤホン 會經過。醬油專門。想食第二次可以揀呢間。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>貝だし中華そば<br>Shi43屋 難波店</b></td>
+      <td class="leg">難波</td>
+      <td class="leg"><b>你最安全的一碗。</b>蜆・蛤・蚬貝出汁，鹽味最清澄。零豚骨、零辣。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>本家第一旭<br>三条河原町店</b></td>
+      <td class="leg">京都市役所前駅 4 分<br>（三条河原町）</td>
+      <td class="leg">原本排 11/23 祇園回程（11/23 改咗大阪，暫未排）。京都老舖，澄淨醬油 + 燒豚。<b>要點「あっさり」</b>，標準版偏油。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>麺屋猪一</b></td>
+      <td class="leg">京都河原町駅 4 分</td>
+      <td class="leg">和風出汁そば，清淡細緻，米芝蓮級評價。<b>11/24 想食拉麵就揀呢間</b>，唔會頂胃。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>麺屋はなび<br>大須店</b><br><span class="tag">已排 11/29</span></td>
+      <td class="leg">中区大須 2-29-9 <b>2F</b><br>大須観音駅 3 分</td>
+      <td class="leg"><b>台湾まぜそば 發源店。</b>名古屋名物，唔食等於冇來過。但係<b>辣＋蒜＋大量油</b> —— 你 IBS 高風險。<b>建議：叫「辛さ控えめ」（少辣），只食一半，湯汁唔好飲。</b>或者改食隔籬的キング軒。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>矢場味仙<br>（大須）</b></td>
+      <td class="leg">大須・矢場町<br>営業至翌 1:00</td>
+      <td class="leg">台湾ラーメン ¥850，元祖系。<b>好辣。</b>想試名古屋味但腸胃唔舒服就跳過。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>キング軒<br>名古屋大須店</b></td>
+      <td class="leg">大須<br>10:30–20:30</td>
+      <td class="leg">汁なし担担麺 ¥750–800。<b>比はなび 溫和</b>，可以叫少辣。11/29 的後備。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>中華そば 大河</b></td>
+      <td class="leg">名駅・柳橋<br><b>朝 6:00–14:00</b></td>
+      <td class="leg">¥900。11/26 由大阪到名古屋那個早上可以去（但你 08:50 到，要趕 LEGOLAND，唔夠時間）。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>奈良（備用）：</b>我未查到值得特登排的拉麵店。近鉄奈良駅一帶有幾間，但東大寺＋春日大社行完通常已經好攰 —— 建議在<b>ならまち</b>食烏冬或定食，唔好為拉麵繞路。
+</div>
+
+<h2>燒肉</h2>
+
+<div class="note">
+  <b>⚠️ IBS 版的燒肉點食法：</b><br><br>
+  <b>① 避ホルモン。</b>內臟脂肪最高，最易出事。你叫「ホルモン盛り合わせ」= 自找麻煩。<br>
+  <b>② 揀瘦切。</b>ヒレ（菲力）＞ ロース（里肌）＞ 赤身 ＞ カルビ（牛五花，油最多，少量就好）。<br>
+  <b>③ 叫「塩で」。</b>燒肉醬含大量蒜同洋蔥（高 FODMAP），鹽燒或檸檬汁安全得多。<br>
+  <b>④ 唔好食太多サンチュ＋生蒜。</b>生菜沒問題，蒜就係元兇。<br>
+  <b>⑤ 食完唔好即刻飲凍嘢。</b>
+</div>
+
+<table class="stack">
+  <thead><tr><th>店</th><th>位置・價錢</th><th>點解・點叫</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>焼肉 燦家 SANYA</b><br><span class="tag">已排 11/28</span></td>
+      <td class="leg">名古屋駅 472m<br><b>全室個室</b><br>¥6,000–8,000／人</td>
+      <td class="leg"><b>首選。</b>「肉のスギモト」這間老牌精肉店監修，九州産黒毛和牛。全室個室 —— 唔會成身煙味，價錢合理。<b>叫「塩でお願いします」</b>。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>飛騨牛一頭家<br>馬喰一代 名古屋WEST</b></td>
+      <td class="leg">名古屋駅 369m<br>¥10,000–12,000／人</td>
+      <td class="leg"><b>想食飛騨牛就揀呢間。</b>岐阜飛騨牛一頭買，炭火燒。比燦家貴約一倍，但係「一生人一次」級數。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>TANAKA YAKINIKU<br>RESTAURANTE</b></td>
+      <td class="leg">名鉄名古屋駅 247m<br>¥15,000–20,000／人</td>
+      <td class="leg">名古屋最貴一檔，「肉師」主理。<b>預算唔係問題才考慮</b>，兩個人隨時三萬円。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>焼肉 鶴橋<br>本店</b><br><span class="tag">大阪後備</span></td>
+      <td class="leg">大阪・鶴橋駅 <b>40m</b><br>¥6,000–8,000／人</td>
+      <td class="leg">A5 近江牛一頭買，性價比極高。<b>鶴橋係近鉄轉車站</b> —— 如果去奈良，回程 17:30 落車食（近鉄奈良 → 鶴橋 約 35 分），食完返新今宮 3 分。11/23 而家留喺大阪，想食就要另約一晚。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>焼肉 白雲台<br>鶴橋本店</b></td>
+      <td class="leg">大阪・天王寺区下味原町 5-26<br>06-6774-4129<br>晚 17:00–21:00LO<br><b>星期二休</b></td>
+      <td class="leg">上撰ハラミ 出名，手打冷麺 ¥1,100。鶴橋老舖。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>焼肉 轟</b></td>
+      <td class="leg">大阪・鶴橋駅 1 分<br>土日祝 12:00–22:00<br>06-6975-6699</td>
+      <td class="leg">鶴橋少有的高級店，特上塩タン。¥8,000–10,000／人。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>點解唔排 11/22（做完醫美那日）：</b>燒肉店煙大、油煙多、室內熱 —— 你面上剛做完微針，幾百個微傷口暴露在油煙同高溫裡。而且燒肉高脂，對 IBS 同術後都不友好。<b>避開。</b>
+</div>
+
+<h2>梅田購物（11/25 全日）</h2>
+
+<p class="leg">11/25 全日梅田：10:15 阪急うめだ本店 → 12:30 午餐 → 14:00 阪神梅田 B1 → 15:30 梅田 蔦屋書店（LUCUA 9F）→ 16:30 地下街 → 17:15 阪急うめだ B1 補手信 → 18:30 晚餐 → 20:15 たまごっちのおみせ → 21:00 返新今宮。全部舖互相步行 5–8 分鐘。<b>兩間百貨 B1 都 20:00 關門</b>，HEP FIVE 開到 21:00 —— 所以百貨先行，たまごっち 排最後。11/25 是平日（星期三），比 11/23 假期少人好多。</p>
+
+<table class="stack">
+  <thead><tr><th>舖</th><th>位置・時間</th><th>要留意</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>阪急うめだ本店 B1</b><br>菓子・食品</td>
+      <td class="leg">北区角田町 8-7<br>阪急 大阪梅田駅 直結<br><b>10:00–20:00</b></td>
+      <td class="leg">日本最大級 depachika。B1 洋菓子／和菓子／惣菜，試食多。<b>17:15 落 B1 補手信</b>，先揀要買的菓子，唔好逐層行。<b>20:00 落閘。</b></td>
+    </tr>
+    <tr>
+      <td class="base"><b>阪神梅田本店 B1</b><br>C.CUBE（シーキューブ）</td>
+      <td class="leg">北区梅田 1-13-13<br>B1 <b>9:30–20:00</b><br>スナックパーク <b>10:00–22:00</b></td>
+      <td class="leg">C.CUBE 是 B1 的洋菓子 counter（シーキューブ C3 品牌）。同層 <b>スナックパーク</b> 是企位小食場，阪神名物 <b>いか焼き</b> —— 行到餓即刻食，唔使等位。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>たまごっちのおみせ</b><br>バンダイナムコ Cross Store 大阪梅田</td>
+      <td class="leg">北区角田町 5-15<br><b>HEP FIVE 8・9F</b><br><b>11:00–21:00</b></td>
+      <td class="leg">たまごっち官方專門店，香港冇。紅色摩天輪那棟 HEP FIVE，由阪急うめだ本店行 5 分鐘。<b>部分新商品要網上事前抽選</b>，抽唔到都可以買現貨周邊。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>11/25 三餐（全日梅田）</h3>
+<table class="stack">
+  <thead><tr><th>餐</th><th>去邊</th><th>備註</th></tr></thead>
+  <tbody>
+    <tr><td class="base">早餐</td><td class="leg">便利店（新今宮站前）</td><td class="leg">09:45 出發，唔好花時間坐低食。</td></tr>
+    <tr><td class="base">午餐</td><td class="leg"><b>阪急うめだ 上層餐廳街</b> 或 <b>新梅田食道街</b> 12:30</td><td class="leg">行到 12:30 剛好；唔好行到太遠，LUCUA 都係同一個站。</td></tr>
+    <tr><td class="base">下午茶</td><td class="leg">阪神 B1 <b>スナックパーク いか焼き</b>（14:00）或 LUCUA 咖啡</td><td class="leg">企位，快、平。18:30 食晚餐，唔好食太飽。</td></tr>
+    <tr><td class="base">晚餐</td><td class="leg"><b>新梅田食道街 きじ 本店</b>（お好み焼き，L.O. 20:30，日休，<b>只收現金</b>）18:30<br>或 <b>阪神 9F 阪神大食堂</b>（フードホール 11:00–22:00，L.O. 21:30）</td><td class="leg">18:30 入座兩間都唔使排；食完 20:15 去 HEP FIVE たまごっち（21:00 收）。</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>⚠️ 11/25 係全日梅田購物日。</b>好處：唔使趕車、唔使拎住戰利品周圍走、11/25 平日商場少人。11/23 已經改成大阪市內輕鬆日（見上面「11/23 大阪輕鬆日」）。e☆イヤホン 25 日 5% 折要 11/25 朝早自己抽 40 分鐘落日本橋，或者 11/22 買（冇 5%）。
+</div>
+
+<h2>香水</h2>
+
+<div class="note">
+  <b>⚠️ 11/22 唔好試香。</b>你當日 10:00 做完ポテンツァ（射頻微針），皮膚屏障破損。香水係酒精＋香精，蒸氣熏到面會刺痛、發紅。試香留返 11/25（治療後 3 日，已消紅）—— 正好 11/25 全日梅田，LUCUA 4F NOSE SHOP＋9F 蔦屋 J-Scent 一次過試。
+</div>
+
+<h3>一、梅田 LUCUA 1100 —— 一站式（大阪駅直結）</h3>
+<p class="leg">一棟樓行完，唔使走來走去。11/21 晚或 11/22 後任何一日由新今宮搭御堂筋線到梅田 15 分。</p>
+
+<table class="stack">
+  <thead><tr><th>樓層</th><th>店</th><th>賣咩</th></tr></thead>
+  <tbody>
+    <tr><td class="base"><b>9F</b></td><td class="leg"><b>梅田 蔦屋書店</b><br><span class="tag">J-Scent</span></td><td class="leg"><b>和香水 J-Scent</b> —— 日本品牌，用日本題材做香：<b>焙じ茶</b>（ほうじ茶）、<b>Paper Soap</b>（石鹸）、<b>ラムネ</b>（波子汽水）、<b>和肌</b>。50ml <b>¥4,500＋稅＝¥4,950</b>。香港買唔到。<br>蔦屋 <b>8:30–21:00</b>（10:30 前只可自助結帳）</td></tr>
+    <tr><td class="base"><b>4F</b></td><td class="leg"><b>NOSE SHOP 大阪</b><br>06-4300-7113</td><td class="leg"><b>數十個國際 niche 品牌</b>，日本其他地方見唔到。想「一次過試好多支」就係呢度。試香紙免費。</td></tr>
+    <tr><td class="base"><b>2F</b></td><td class="leg"><b>AUX PARADIS</b></td><td class="leg">日本品牌，細支裝／refill 裝，適合試味。價錢親民。</td></tr>
+    <tr><td class="base"><b>2F</b></td><td class="leg"><b>The PERFUME OIL FACTORY</b></td><td class="leg"><b>無酒精香水油</b> —— 如果你怕酒精刺激皮膚，呢個係答案。亦唔受液體手提限制（非易燃）。</td></tr>
+  </tbody>
+</table>
+
+<h3>二、U NOSE SHOP 心斎橋 <span class="tag">未排</span></h3>
+<p class="leg">
+  <b>心斎橋筋 1-8-3 心斎橋PARCO B1F</b>｜Osaka Metro 心斎橋駅南改札<b>直結</b>｜跟 PARCO 營業時間（約 11:00–21:00）<br>
+  2026 年 6 月開幕的新業態。設計重點：<b>入口有一區係「品牌名同故事全部遮住」的試香區</b> —— 唔知牌子、唔知價錢，淨係靠鼻揀。對「唔想被品牌影響」的人嚟講係最好玩的體驗。<br>
+  排法：11/25 而家全日梅田，LUCUA 4F 已經有 NOSE SHOP 大阪（同類、幾十個 niche 品牌），所以心斎橋呢間可以唔去。真想去就 11/22 醫美後行過去（15:00 前），但當日皮膚剛做完療程，唔好試香。
+</p>
+
+<h3>三、其他點</h3>
+<table class="stack">
+  <thead><tr><th>店</th><th>位置</th><th>適合</th></tr></thead>
+  <tbody>
+    <tr><td class="base"><b>L'ATELIER DES PARFUMS</b></td><td class="leg">大丸心斎橋店<br>06-6243-7340</td><td class="leg">ハイブランド香水（Chanel、Dior、Tom Ford 類）。有專人講解，可以坐低慢慢試。</td></tr>
+    <tr><td class="base"><b>NOSE SHOP<br>グランフロント大阪</b></td><td class="leg">大深町 4-20 南館 2F<br>06-6225-7910</td><td class="leg">同 LUCUA 店品牌唔完全重疊。時間夠就行兩間。</td></tr>
+    <tr><td class="base"><b>JARDIN DES PARFUMS</b></td><td class="leg">ルクア大阪</td><td class="leg">セレクト系，價位中間。</td></tr>
+  </tbody>
+</table>
+
+<h3>四、想自己調一支</h3>
+<table class="stack">
+  <thead><tr><th>店</th><th>價錢</th><th>備註</th></tr></thead>
+  <tbody>
+    <tr><td class="base"><b>SHOLAYERED</b><br>梅田店／なんば店</td><td class="leg"><b>¥9,680</b></td><td class="leg">重疊式調香體驗，最出名。要預約。</td></tr>
+    <tr><td class="base"><b>HUGONIST</b><br>北堀江</td><td class="leg"><b>¥15,950</b></td><td class="leg">本格調香工房，最專業但最貴。</td></tr>
+    <tr><td class="base"><b>LITTLE FOREST</b></td><td class="leg"><b>¥2,500</b></td><td class="leg">森林主題，最平，適合試玩。</td></tr>
+  </tbody>
+</table>
+
+<h3>五、名古屋 ル ラボ 直營店 <span class="tag">已排 11/29</span></h3>
+<p class="leg">
+  <b>タカシマヤ ゲートタワーモール 2F</b>｜名駅 1-1-3｜<b>名古屋駅直結</b>｜052-566-6219｜<b>10:00–20:00</b><br>
+  東海區唯一直營店（2024 年 3 月開）。要買 <b>Santal 33</b> 就係呢度 —— 即場手動調配，玻璃瓶上<b>免費印日期＋23 字以內的英數字</b>（名、句子都可以）。呢個係網店同水貨都做唔到嘅。
+</p>
+
+<table class="stack">
+  <thead><tr><th>容量</th><th>日本定價（稅込）</th><th>折港幣（1 HKD ≈ 20.3 JPY）</th><th>備註</th></tr></thead>
+  <tbody>
+    <tr><td class="base"><b>15ml</b></td><td>¥14,300</td><td>≈HK$706（退稅後 ≈HK$657）</td><td class="leg">每 ml 最貴，只適合試味</td></tr>
+    <tr><td class="base"><b>50ml</b></td><td>¥32,230</td><td>≈HK$1,591（退稅後 ≈HK$1,480）</td><td class="leg">中間落墨</td></tr>
+    <tr><td class="base"><b>100ml</b></td><td>¥47,190</td><td>≈HK$2,330（退稅後 ≈HK$2,167）</td><td class="leg">每 ml 最抵；但香港 ZALORA ≈HK$2,154、Harrods ≈HK$2,200</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>⚠️ 價錢上唔會平過香港。</b>100ml 退稅後 ≈HK$2,167，香港網店約 HK$2,150–2,200 —— 即係差不多。去呢間係為咗<b>印 label＋即場調配＋旅程紀念</b>，唔係為慳錢。<br>
+  排法：<b>11/29 10:45 名古屋駅寄 locker → 10:55 ル ラボ → 11:30 落大須</b>；後備 11/28 晚飯前 17:55（同一棟，名古屋駅行 2 分鐘，20:00 前）。
+</div>
+
+<div class="note">
+  <b>⚠️ 香水帶上機 —— 呢個係最容易中招的一項。</b><br><br>
+  香水含<b>酒精</b>，屬<b>易燃液體</b>，受 IATA 危險品限制：<br>
+  <b>手提：</b>每件容器 <b>≤100ml</b>，全部裝入 <b>1L 透明密實袋</b>，每人一袋。<br>
+  <b>寄艙：</b>通常每件 <b>≤500ml</b>、每人總量 <b>≤2L</b>，要原廠包裝、避免破損。<br>
+  <b>香港快運 UO：</b>對酒精類液體查得緊，超出就要放棄或即場處理。<br><br>
+  <b>👉 結論：買 50ml 裝，直接手提上機，最省事。</b>100ml 以上一定要寄艙。<br><br>
+  <b>免稅（2026/11/1 新制「リファンド方式」）：</b>店內先照畀<b>稅込</b>價錢 → <b>購買當日</b>去店／商場免稅櫃檯登記（護照、收據、實物、信用卡；過咗當日就辦唔到）→ 離境時在機場<b>海關確認實物</b>（<b>寄艙前</b>，過關之後冇得搞）→ 之後才退錢，退款扣手續費。タカシマヤ 收<b>消費稅嘅 23%</b>，即實際只攞返約 7.7%。香水屬「化粧品（消耗品）」，同店單日稅抜 <b>¥5,000</b> 以上合資格，<b>離境前唔可以開封使用</b>。
+</div>
+
+<h2>壽司</h2>
+
+<div class="note">
+  <b>⚠️ IBS 版的壽司食法：</b><br><br>
+  <b>✅ 安全：</b>赤身（吞拿魚瘦肉）、白身魚、えび、いか、たこ、玉子。醋飯本身冇問題。<br>
+  <b>⚠️ 少量：</b>トロ（吞拿魚腩）、サーモン、うに —— 高脂，你腸胃會有意見。<br>
+  <b>❌ 避：</b>大量山葵、濃醬油、軍艦卷上的美乃滋。<br>
+  <b>飲品：</b>綠茶好過啤酒。想飲酒就少量。
+</div>
+
+<table class="stack">
+  <thead><tr><th>店</th><th>位置・時間</th><th>點解・點叫</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>いづ重</b><br><span class="tag">未排</span></td>
+      <td class="leg">京都市東山区祇園町北側 292-1<br>祇園石段下・祇園四条駅 5 分<br><b>10:30–18:00</b>（LO 18:30）<br><b>星期三休</b>・20 席<br>075-561-0019</td>
+      <td class="leg"><b>京都名物 鯖寿司</b>（青花魚押壽司）。鯖魚由若狹灣經「鯖街道」運到京都，用昆布包住醋飯，係京都獨有的味道 —— 香港食唔到。<b>鯖寿司（小）¥2,268</b>、上箱寿司 ¥1,620。原本排 11/23（星期一開）；11/23 改咗大阪，暫未排 —— 11/24 由祇園返京都駅時可以外帶。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>いづう</b></td>
+      <td class="leg">東山区八坂新地清本町 367<br>祇園四条駅 5 分<br><b>11:00–22:00</b>（日祝至 21:00）<br><b>星期二休</b>・16 席・<b>不可預約</b><br>075-561-0751</td>
+      <td class="leg"><b>1781 年創業，8 代。</b>鯖姿寿司 4 貫 <b>¥2,200</b>。想食晚餐、或者想坐低慢慢食就揀呢間。外帶 6 貫 ¥3,240（朝 8 時起可電話預訂）。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>元禄寿司 道頓堀店</b><br><span class="tag">大阪後備</span></td>
+      <td class="leg">中央区難波 1-2-10<br>道頓堀・<b>無休</b></td>
+      <td class="leg"><b>迴轉壽司發源地。</b>想體驗「第一次食迴轉壽司」的樂趣就揀呢間。11/21 晚或 11/22 晚，由新世界行去道頓堀 15 分。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>春駒 本店</b></td>
+      <td class="leg">北区天神橋 5-5-2<br>天神橋筋六丁目駅 12 番出口 2 分<br><b>11:00–21:30</b>（ネタ切れ次第終了）<br><b>星期二休</b></td>
+      <td class="leg"><b>大阪性價比之王。</b>2 貫 ¥165 起，マグロ 2 貫 ¥200。但<b>開店前就排 20–30 人</b>。由日本橋搭堺筋線直達 10 分。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>廻転寿司 CHOJIRO<br>法善寺店</b></td>
+      <td class="leg">中央区難波 1-2-10 附近<br>11:00–22:30・無休</td>
+      <td class="leg">比元禄貴少少但質素較穩，法善寺橫丁旁邊。11/21 晚想行完通天閣再食宵夜可以考慮。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>名古屋唔建議特登食壽司。</b>內陸城市，魚生要靠外面運入，同大阪／京都比冇優勢。你 11/26–29 在名古屋，壽司留返大阪同京都食。
+</div>
+
+<h2>11/23 大阪輕鬆日：棒球機＋班戟</h2>
+
+<p class="lead">11/23（一・勤労感謝の日）唔去京都，留喺大阪。全日室內為主、最遠 2 個地鐵站，行到攰可以坐低。要記住：<b>Round One 千日前店嘅棒球機（バッティング）係喺 スポッチャ 裡面</b>，要買 スポッチャ 入場券才可以玩，唔係逐局投幣。</p>
+
+<table class="stack">
+  <thead><tr><th>時段</th><th>去邊</th><th>食咩・做咩・要留意</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base">09:00<br>早餐</td>
+      <td class="leg"><b>千成屋珈琲</b><br>浪速区恵美須東 3-4-15<br>動物園前駅 2 分</td>
+      <td class="leg">ミックスジュース發祥地，昭和 23 年創業。祝日 <b>9:00–19:00</b>、無休。モーニング（ミックスジュース 或 咖啡＋厚多士＋烚蛋）約 ¥700。由酒店行 5 分鐘，唔使趕。</td>
+    </tr>
+    <tr>
+      <td class="base">11:30<br>午餐</td>
+      <td class="leg"><b>自由軒 難波本店</b><br>中央区難波 3-1-34<br>なんば駅 3 分</td>
+      <td class="leg">明治 43 年創業、<b>名物カレー ¥750</b>（咖喱同飯撈埋、中間一隻生蛋）。11:30–21:00；<b>平時星期一休，但 11/23 係祝日所以開，改 11/24 休</b>。只收現金。</td>
+    </tr>
+    <tr>
+      <td class="base">13:00<br>棒球機</td>
+      <td class="leg"><b>ラウンドワン スタジアム<br>千日前店</b><br>中央区難波 1-3-1<br>なんば駅 15 番出口 3 分</td>
+      <td class="leg">24 小時營業。バッティング 喺 <b>スポッチャ</b> 內，祝日大人 <b>90 分 ¥2,640／3 小時 ¥3,290</b>，同場仲有乒乓波、桌球、籃球機。官方 app 有 coupon，會員再減 ¥200。輕鬆日建議買 90 分。</td>
+    </tr>
+    <tr>
+      <td class="base">15:00<br>班戟</td>
+      <td class="leg"><b>Etoile（エトワール）<br>心斎橋</b><br>中央区西心斎橋 1-8-23<br>心斎橋駅 7 番出口 3 分</td>
+      <td class="leg">パリパリ クレープ（薄身班戟）。<b>13:00–22:00、外賣專門、冇座位</b>；平時星期一休，<b>祝日開、翌日（11/24）休</b>。一條約 ¥700（いちごソースホイップ／紫芋モンブラン）。買完行去アメリカ村邊行邊食。</td>
+    </tr>
+    <tr>
+      <td class="base">18:30<br>晚餐</td>
+      <td class="leg"><b>六鮮 通天閣本店</b><br>浪速区恵美須東 1-17-7<br>新今宮駅 7 分</td>
+      <td class="leg">魚屋直營壽司，60 円一貫起，通天閣套餐 ¥2,000。<b>11:30–22:00（L.O. 21:30）、年中無休</b>，有桌位，坐得舒服。食完行 7 分鐘返酒店。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>三點要留意：</b><br><br>
+  <b>① 11/23 係勤労感謝の日</b> —— 難波、心斎橋會多人，但全部係室內商場／餐廳，落雨都唔怕。想避人潮就 11:30 前食午餐。<br><br>
+  <b>② 原本 11/23 嘅奈良 day trip（東大寺／奈良公園／春日大社）成段抽出。</b>想保留奈良就要另找一日：最順係 11/25 由梅田抽半日（近鉄 45 分），或者將 11/24 京都日換走。想郁就話我知。<br><br>
+  <b>③ 11/22 做完ポテンツァ，11/23 大部份時間喺室內</b>，對皮膚反而好 —— 出街那幾段記得帽＋防曬。
+</div>
+
+<h2>奈良紅葉（備用：如果改返去奈良）</h2>
+
+<p class="lead"><b>11/23 已改成大阪輕鬆日，奈良暫時唔喺行程內。</b>以下資料保留 —— 之後想加返（近鉄直達 45 分，最易插係 11/25 抽半日，或者換走 11/24 京都日），照呢個表跑就得。奈良公園歷年見頃 10 月下旬–12 月上旬（イロハカエデ 11 月下旬–12 月上旬才是盛期），東大寺、春日大社 11 月中–下旬最靚。</p>
+
+<table class="stack">
+  <thead><tr><th>地點</th><th>幾點到（如去）</th><th>紅葉重點</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>東大寺</b></td>
+      <td class="leg">10:00</td>
+      <td class="leg">大佛殿前後、南大門一帶楓樹最密，配大佛殿做背景。同場有銀杏，紅黃一起。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>奈良公園</b><br>飛火野・浮見堂</td>
+      <td class="leg">12:00</td>
+      <td class="leg">飛火野草原係「紅葉＋銀杏＋鹿」一齊入鏡的位置；<b>浮見堂</b>（鷺池六角堂）水面紅葉倒影係明信片角度，由公園行過去 10 分鐘。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>春日大社</b></td>
+      <td class="leg">13:30</td>
+      <td class="leg">參道兩旁楓樹成隧道，11 月中–下旬高峰，順路睇萬燈籠。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>依水園</b><br><span class="tag">可選</span></td>
+      <td class="leg">東大寺之後<br>加 40–60 分</td>
+      <td class="leg">東大寺南大門旁（水門町 74）。借景若草山＋東大寺南大門的名勝庭園，紅葉見頃 10 月中–11 月下旬 —— 11 月尾去算尾聲但仍有睇頭。<b>¥1,200</b>（包寧樂美術館）、9:30–16:30（16:00 最後入園）、平時週二休但 <b>11 月每日開</b>。入去就要將奈良公園＋春日大社壓縮 30–40 分鐘。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>正暦寺</b><br>「錦の里」</td>
+      <td class="leg">唔順路<br>建議唔去</td>
+      <td class="leg">3,000 棵楓、參道 500 米紅葉隧道，11 月中–12 月初最靚。但由近鉄奈良要轉巴士約 40 分（菩提山町），來回兩個鐘起，即日來回大阪塞唔落。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>想加返奈良就同我講。</b>近鉄直達、零額外車程；只想去半日就東大寺＋奈良公園兩個鐘夠。
+</div>
+
+<h2>11/27 名古屋市區：ひつまぶし＋榮＋溫泉</h2>
+
+<p class="lead">香嵐渓來回 5 個鐘太遠，11/27 改成<b>名古屋市區一日</b>：老舖喫茶モーニング → 蓬萊軒ひつまぶし → 榮行街（PARCO＋SONY Store）→ RAKU SPA 天然溫泉，晚餐喺館內解決。全日地鐵 1–2 站，最遠一段坐溫泉免費送迎バス，唔使趕車。</p>
+
+<table class="stack">
+  <thead><tr><th>時段</th><th>去邊</th><th>食咩・做咩・要留意</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base">08:30<br>早餐</td>
+      <td class="leg"><b>コンパル サンロード店</b><br>中村区名駅 4-7-25<br>名駅地下街サンロード B16</td>
+      <td class="leg">1947 年創業老舖喫茶。<b>8:00–21:00，モーニング 8:00–11:00</b>，ドリンク代＋約 ¥130 就有ハムエッグトーストサンド（コーヒー ¥500）。由名鉄名古屋駅行 3 分鐘，落車即食，唔使出地面。</td>
+    </tr>
+    <tr>
+      <td class="base">11:00<br>午餐</td>
+      <td class="leg"><b>あつた蓬莱軒 松坂屋店</b><br>中区栄 3-30-8<br>松坂屋名古屋店 南館 10F</td>
+      <td class="leg">名古屋名物ひつまぶし（「ひつまぶし」係蓬萊軒的註冊商標）<b>¥4,600 起</b>，四食：原味 → 加藥味 → お茶漬け → 隨你喜歡。<b>平日 11:00–14:30（L.O.）</b>、火曜休 —— 11/27 星期五開。矢場町駅 2 分。<b>原則上全員到齊才入座</b>，混雜會提早截龍，11:00 前到最好。</td>
+    </tr>
+    <tr>
+      <td class="base">12:40<br>行街</td>
+      <td class="leg"><b>名古屋パルコ</b><br>中区栄 3-29-1<br>矢場町駅直結</td>
+      <td class="leg">西館／東館／南館三棟，動漫雑貨、服飾、書店。物販 <b>10:00–20:00</b>，西館 7F 餐廳街 11:00–21:30。矢場町駅直結，落雨都唔怕。</td>
+    </tr>
+    <tr>
+      <td class="base">13:50<br>SONY</td>
+      <td class="leg"><b>ソニーストア 名古屋</b><br>中区錦 3-24-17<br>BINO栄 3F・栄駅西改札 4 分</td>
+      <td class="leg"><b>11:00–19:00、無休</b>（12/31、1/1 除外）。可以試 WH-1000XM 系耳機、Xperia、α 相機、Aibo、BRAVIA。想慢慢試就早少少離開 PARCO。</td>
+    </tr>
+    <tr>
+      <td class="base">15:15<br>溫泉</td>
+      <td class="leg"><b>RAKU SPA GARDEN 名古屋</b><br>名東区平和が丘 1-65-2</td>
+      <td class="leg">天然溫泉＋岩盤浴＋漫畫 4 萬冊＋休息躺椅。<b>平日フリータイム ¥2,100</b>（包毛巾、館內着、岩盤浴）；趕時間可用 90 分 ¥1,050（毛巾 ¥330＋館內着 ¥220 另計）。金曜開到翌日 8:00。<b>栄駅 10A 出口送迎バス 14:30 開，約 45 分。</b></td>
+    </tr>
+    <tr>
+      <td class="base">17:20<br>晚餐</td>
+      <td class="leg"><b>GARDEN DINING 楽</b><br>RAKU SPA 館內餐廳</td>
+      <td class="leg">著館內着食，唔使趕。<b>10:30–23:00（L.O. 22:30）</b>，和食定食、麵類、丼。食完 18:15 送迎バス返栄駅，轉東山線＋名鉄，約 20:00 返到寺本。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>三點要留意：</b><br><br>
+  <b>① 送迎バス一日只有 8 班（栄駅發）</b>：10:00／11:30／13:00／14:30／15:50／17:20／18:50／20:20；RAKU SPA 發 12:25／13:55／15:15／16:45／18:15／19:45。上車位在栄駅 10A 出口（セントラルパーク地下街入口）CTV錦ビル KAWAI 看板前，唔係地下鐵 10 號出口。錯過 14:30 就要等 15:50，溫泉只剩 1 個半鐘。<br><br>
+  <b>② 11/22 做完ピコ，11/27 只隔 5 日。</b>皮膚科一般建議 1 星期內唔好浸溫泉／岩盤浴／焗桑拿。想穩陣就先問診所，或者只沖涼、唔浸長時間、唔入桑拿房。<br><br>
+  <b>③ 想食名古屋名物做晚餐</b>（味噌煮込みうどん／手羽先／味噌かつ），就改坐 19:45 班車返栄駅食，21:15 前返到寺本 —— 但會夜一個鐘。
+</div>
+
+<h2>香嵐渓紅葉（備用：如果改返去）</h2>
+
+<p class="lead"><b>11/27 已改名古屋市區，香嵐渓暫時唔喺行程內。</b>以下資料保留 —— 之後想加返（要一整天，來回約 5 小時）照呢個跑就得。</p>
+
+<table class="stack">
+  <thead><tr><th>項目</th><th>細節</th></tr></thead>
+  <tbody>
+    <tr><td class="base">路線</td><td class="leg">寺本 → 名鉄 準急 名鉄名古屋 27 分 → 地鐵東山線 伏見 → 鶴舞線 赤池 → 名鉄豊田線 浄水 12 分 → とよたおいでんバス 60 分 → 香嵐渓。<b>單程約 2 小時 30 分</b>，巴士 ¥900 單程。</td></tr>
+    <tr><td class="base">為甚麼要平日</td><td class="leg">2026 年<b>沒有</b>「八草 → 香嵐渓」直行巴士。經浄水轉とよたおいでんバス的話，11/21–23 三連休 11:00–18:00 的班次只能到「西中金」，根本不到香嵐渓；名鉄バス矢並線亦在 11/21、22、23、28、29 有區間運休。觀光協會自己寫明「請於平日前往」，所以只可以排 11/27（五）或 11/26（四）。</td></tr>
+    <tr><td class="base">睇咩</td><td class="leg">香積寺、待月橋、もみじのトンネル、足助の町並み（三州足助屋敷）。日落後飯盛山ライトアップ至 21:00；回程尾班車要出發前確認。</td></tr>
+    <tr><td class="base">幾點要出門</td><td class="leg">06:00 寺本駅出發 → 08:40 到香嵐渓 → 12:00 午餐（五平餅、炭焼きフランク）→ 14:00 足助老街 → 16:40 ライトアップ → 18:00 回程 → 20:30 寺本（晚餐在名古屋先解決）。</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>想加返香嵐渓就同我講。</b>要一整天同 5 個鐘車程，插入去即係要換走 11/28 犬山日 —— 犬山紅葉同樣出名，而且近一半路程，所以現在排 11/28 犬山係較化算的選擇。
+</div>
+
+<h2>爆卡：《超時空輝耀姬！》（超かぐや姫！）</h2>
+
+<div class="note">
+  <b>有兩條主線，唔好搞錯：</b><br><br>
+  <b>① バンダイ 食玩「ツインウエハース」</b> —— <b>¥198／個</b>，有威化餅食，全 <b>35 種（含 3 種シークレット）</b>。<b>便利店／超市零食區</b>就買到，最容易入手。<br>
+  <b>② ブシロード「トレーディングカード コレクションクリア」</b> —— <b>¥100／包</b>，全 <b>28 種</b>，純膠卡。100 円ショップ／卡店。<br><br>
+  另外仲有幾條「亞克力卡」線（A3／ホビーストック／ゲツオシマート），貴但可以一次買齊。
+</div>
+
+<h3>全部卡類一覽</h3>
+<table class="stack">
+  <thead><tr><th>產品</th><th>每包 / BOX</th><th>種類</th><th>評語</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>バンダイ<br>ツインウエハース</b><br><span class="tag">✅ 爆卡首選</span></td>
+      <td class="leg"><b>¥198／個</b><br>1 BOX（20 個）<b>¥3,960</b></td>
+      <td class="leg"><b>35 種</b><br>其中 <b>3 種シークレット</b></td>
+      <td class="leg"><b>金屬感膠卡 ＋ 雲呢拿威化 2 片。</b>2026/8/24 發售。<b>全國超市、藥妝、便利店零食區</b>都有 —— 你行過就買得到，最方便。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>ブシロード<br>BTC クリアカード</b></td>
+      <td class="leg"><b>¥100＋稅／包</b><br>1 BOX（20 包）<b>¥2,200</b></td>
+      <td class="leg"><b>28 種</b></td>
+      <td class="leg">純膠卡 63×89mm，<b>唔可以打</b>。2026/6/19 發售，官網已斷貨。<b>100 円ショップ</b>、カードショップ、ゲーマーズ。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>ホビーストック<br>トレーディング<br>アクリルカード</b><br><span class="tag">1 BOX 齊套</span></td>
+      <td class="leg"><b>¥660／個</b><br>1 BOX（10 個）<b>¥6,600</b></td>
+      <td class="leg"><b>10 種</b></td>
+      <td class="leg">厚 1mm 亞克力。<b>官方講明「1 BOX 買齊全 10 種」</b> —— 冇賭性，想齊套就買呢個。2026/5 發售。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>A3 アクリルカード<br>01 / 02 / 03</b></td>
+      <td class="leg"><b>¥660–690／包</b><br>BOX ¥4,140<br>コンプリートセット ¥3,680</td>
+      <td class="leg">01：8 種<br>02：6 種<br>03：6 種</td>
+      <td class="leg">約 70×90mm 亞克力。03 有「コンプリートセット」可以直接買齊 6 種，唔使抽。2026/4・10 發售。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>ゲツオシマート<br>トレーディング<br>クリアカード</b><br><span class="tag">11 月新貨</span></td>
+      <td class="leg">單品 <b>¥440</b><br>全套（11 種）<b>¥4,840</b></td>
+      <td class="leg"><b>11 種</b></td>
+      <td class="leg">新繪插畫（FUSHI 居家服／偶像風衣裝）。<b>預約期 2026/11/13 12:00 – 11/27 12:00。</b></td>
+    </tr>
+    <tr>
+      <td class="base"><b>ムービック<br>フォトグレイカード</b></td>
+      <td class="leg">一套 8 包 <b>¥3,080</b></td>
+      <td class="leg"><b>8 種</b></td>
+      <td class="leg">半透光相卡，可放手機殼。只賣套裝，唔可以散抽。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>FUNTOS<br>箔押しカード</b></td>
+      <td class="leg"><b>非賣品</b></td>
+      <td class="leg"><b>6 種</b></td>
+      <td class="leg">11/26–1/13 在 FUNTOS 買 ¥2,000 送一張（可自選）。愛知去 <b>プライムツリー赤池店</b>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>你行程內的買法</h3>
+<table class="stack">
+  <thead><tr><th>日子</th><th>去邊</th><th>買咩</th></tr></thead>
+  <tbody>
+    <tr><td class="base">11/21–22<br><span class="tag">隨時</span></td><td class="leg">便利店（Lawson／7-11／FamilyMart）、藥妝店零食區</td><td class="leg"><b>バンダイ ツインウエハース。</b>呢個最容易搵 —— 新世界、心齋橋、難波行過就見到。見到 1 BOX 直接買 BOX。</td></tr>
+    <tr><td class="base">11/22</td><td class="leg"><b>ゲーマーズ 大阪</b><br>浪速区日本橋 3-8-16 B1F</td><td class="leg">你本來去日本橋（e☆イヤホン 5-9-19）。ブシロード BTC、A3 亞克力卡、ホビーストック。</td></tr>
+    <tr><td class="base">11/29</td><td class="leg"><b>ゲーマーズ 名古屋店</b><br>大須 3-30-40 万松寺ビル 1F<br>10:00–21:00</td><td class="leg">貨最齊。同場加映大須卡店群（トレカプラザ55、フルコンプ、ビッグマジック）。</td></tr>
+    <tr><td class="base">11/27</td><td class="leg"><b>FUNTOS プライムツリー赤池</b><br>愛知県日進市赤池南 1-301<br>地下鉄鶴舞線 赤池駅</td><td class="leg">11/26 起開。「ファントエス with 超かぐや姫！」→ 買 ¥2,000 送箔押しカード。名古屋搭鶴舞線約 20 分。</td></tr>
+  </tbody>
+</table>
+
+<h3>想齊套要幾錢？計過數</h3>
+<table class="stack">
+  <thead><tr><th>產品</th><th>齊套期望值</th><th>1 BOX 平均抽到</th></tr></thead>
+  <tbody>
+    <tr><td class="base">バンダイ ツインウエハース<br>（35 種）</td><td class="leg"><b>約 145 個＝7.3 BOX</b><br>≈ <b>¥28,700</b></td><td class="leg">20 個只得 <b>15.4／35 種</b></td></tr>
+    <tr><td class="base">ブシロード BTC<br>（28 種）</td><td class="leg"><b>約 110 包＝5.5 BOX</b><br>≈ <b>¥12,100</b></td><td class="leg">20 包只得 <b>14.5／28 種</b></td></tr>
+    <tr><td class="base">ホビーストック アクリル<br>（10 種）</td><td class="leg"><b>1 BOX ¥6,600 直接齊套</b></td><td class="leg"><b>10／10</b></td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>👉 建議：</b><br>
+  <b>想要「爆」的感覺</b> → バンダイ ツインウエハース 買 1–2 BOX（¥3,960–7,920），中咗 30 種左右再補單卡。<br>
+  <b>想真齊套又唔想賭</b> → ホビーストック 1 BOX（¥6,600 齊 10 種）或 A3 コンプリートセット（¥3,680 齊 6 種）。<br>
+  <b>最重要：唔好散抽。</b>散抽 20 個 vs 買 BOX 同價，但 BOX 唔會有人偷走 secret。見到未開封 BOX 就買 BOX。<br><br>
+  <b>⚠️ 食玩注意：</b>每個有 <b>2 片雲呢拿威化</b>。你 IBS，一次唔好食太多，而且餅乾碎會周圍掉 —— 買 BOX 之後分開袋裝。
+</div>
+
+<h2>上網：eSIM</h2>
+
+<div class="note">
+  <b>👉 已決定：買 2 張 Ubigi 10GB／30 日，US$16.50（約 HK$129）一張。</b><br>
+  用 referral 20% 碼 → 每張 ≈ <b>HK$103</b>，兩張合計 ≈ <b>HK$206</b>。30 日有效期覆蓋 11/21–29 全程；9 日約 1.1GB／日，睇地圖、影相、WhatsApp、查餐廳足夠。<b>真係唔夠可以在 App 內即時加購</b>，唔會斷網。<br>
+  Ubigi 行 <b>NTT Docomo ＋ KDDI 雙網</b> —— 你 11/28 犬山、11/26–29 知多 全部鄉郊，呢個係唯一在山上唔會斷的選擇。
+</div>
+
+<h3>先講清楚：「無限」其實有兩種</h3>
+<div class="note">
+  <b>① FUP 式「無限」（市面上大部分）</b> —— 每日有高速上限，用完降到 1–2 Mbps。仲用得，但慢。<br>
+  <b>② 真·無限（完全不降速）</b> —— 只有幾間日本本地卡做：Mobal、Nippon SIM、Sakura Mobile、SimCorner。但通常只賣 <b>7 日</b>，而且<b>熱點要另外揀計劃</b>。<br><br>
+  你 9 日兩人：FUP 式 5GB/日 ＝ 全程最多 <b>75GB</b>，已經遠超你實際需要。<b>唔值得為「字面上無限」多付錢。</b>
+</div>
+
+<h3>20GB 以上 / 無限：實際價錢（2026 年 11 月）</h3>
+<table class="stack">
+  <thead><tr><th>方案</th><th>價錢</th><th>熱點</th><th>評語</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base"><b>Ubigi 無限 15 日</b><br><span class="tag">用量大先揀</span></td>
+      <td class="leg"><b>US$39</b><br>約 HK$304／張<br>2 人 ≈ HK$608</td>
+      <td class="leg">✓ 可分享</td>
+      <td class="leg"><b>5GB／日全速，之後 2 Mbps。</b>Docomo ＋ KDDI 雙網。9 日行程用 15 日計劃，唔會中途到期。買之前唔使諗用量 —— 就係買個安心。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>Ubigi 25GB／30 日</b><br><span class="tag">最穩「夠用」</span></td>
+      <td class="leg"><b>US$32</b><br>約 HK$250／張</td>
+      <td class="leg">✓ 可分享</td>
+      <td class="leg">每人 25GB。<b>9 日正常用（地圖＋影相＋WhatsApp）大約 3–6GB</b>，25GB 其實好夠。只有睇片／直播／大量上傳相片才會爆。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>Nomad 50GB／30 日</b></td>
+      <td class="leg"><b>US$35</b><br>約 HK$273／張</td>
+      <td class="leg">✓ <b>無上限</b></td>
+      <td class="leg">per GB 最抵之一。KDDI／SoftBank。<b>買一張開熱點兩人共用，總共 50GB</b> —— 但手機電會跌得快，你 11/28 犬山全日戶外冇得充。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>Airalo 20GB／30 日</b></td>
+      <td class="leg"><b>US$25</b><br>約 HK$195／張</td>
+      <td class="leg">✓</td>
+      <td class="leg">市區實測最快（140 Mbps）。但行 <b>SoftBank／KDDI，冇 Docomo</b> → 犬山、知多有風險。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>Ubigi 50GB／30 日</b></td>
+      <td class="leg"><b>US$55</b><br>約 HK$430</td>
+      <td class="leg">✓</td>
+      <td class="leg">per GB US$1.10 最平，但你用唔到 50GB。唔抵。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>Mobal／Sakura Mobile</b><br>真·無限</td>
+      <td class="leg">US$24–35／7 日</td>
+      <td class="leg">⚠️ 部分計劃</td>
+      <td class="leg"><b>真·不降速</b>，本地 Docomo／KDDI 線路。但只賣 7 日 —— 你 9 日差兩日，要買兩張或者補購。熱點要揀對計劃。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>Holafly</b></td>
+      <td class="leg">US$27.50／7 日<br>US$50.50／15 日</td>
+      <td class="leg">❌ 每日 500MB–1GB</td>
+      <td class="leg"><b>❌ 唔好買。</b>FUP 不透明，用完跌到 4–5 Mbps；熱點上限各家講法不一（500MB–1GB／日），妹妹基本分唔到。15 日貴過 Ubigi 無限。</td>
+    </tr>
+    <tr>
+      <td class="base"><b>香港電訊商漫遊</b></td>
+      <td class="leg">csl HK$188／7 日<br>SmarTone HK$198／7 日<br><b>3HK HK$198／日</b></td>
+      <td class="leg">視乎計劃</td>
+      <td class="leg"><b>❌</b> 好處係保留香港號碼接電話，但你在日本用 WhatsApp 就得。3HK 9 日 ＝ HK$1,782。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>⚠️ 三個一定要知</h3>
+
+<div class="note">
+  <b>① eSIM 冇電話號碼 → 打唔到診所。</b><br>
+  湘南美容的預約電話 <b>0120-5489-93</b> 係日本本地號，data-only eSIM 打唔到。要用 <b>微信</b>預約（他們官網寫明有中文翻譯，需微信預約翻譯出勤日）。若一定要打電話：用 Skype Out 或 WhatsApp Call Out 打 <b>+81 120-5489-93</b>。<br><br>
+  <b>② 香港裝好，落機才開。</b><br>
+  在香港先掃 QR code 安裝 profile，但<b>唔好開「數據漫遊」</b>。到關西機場落機才開 —— 否則在香港就開始計日數。<br><br>
+  <b>③ iPhone 雙卡設定。</b><br>
+  設定 → 流動網絡 → 揀日本 eSIM 為「流動數據」→ 開它的「數據漫遊」；香港主號<b>關 data roaming</b>，只留 SMS／來電。咁就可以用日本數據、同時收香港短訊。
+</div>
+
+<h3>買邊張？按你性格揀</h3>
+<table class="stack">
+  <thead><tr><th>你係邊種</th><th>買咩</th></tr></thead>
+  <tbody>
+    <tr><td class="base">✅ <b>你揀咗</b></td><td class="leg"><b>2 × Ubigi 10GB／30 日</b> ≈ <b>HK$206</b>（已計 20% 碼）</td></tr>
+    <tr><td class="base">想留 2 倍餘裕</td><td class="leg"><b>2 × Ubigi 25GB／30 日</b> ≈ HK$400（已計 20% 碼）</td></tr>
+    <tr><td class="base">完全唔想諗用量</td><td class="leg"><b>2 × Ubigi 無限 15 日</b> ≈ HK$486（已計 20% 碼）</td></tr>
+    <tr><td class="base">兩人共用一張</td><td class="leg"><b>1 × Nomad 50GB</b> ≈ HK$273（熱點無上限，但分開行就冇網）</td></tr>
+  </tbody>
+</table>
+
+<h3>10GB 點樣唔好爆</h3>
+<div class="note">
+  <b>① 關 iCloud 相片流動數據同步。</b>設定 → 流動網絡 → 相片 → 關「流動數據」。唔關的話，你影 500 張相會靜靜雞上傳幾 GB。<br>
+  <b>② 睇片留返酒店 Wi-Fi。</b>YouTube／Netflix 一小時可以食 1GB。你 9 日行程冇時間睇片，但晚上在酒店用 Wi-Fi 就唔怕。<br>
+  <b>③ 出發前下載離線地圖。</b>Google Maps → 下載「大阪・京都・奈良・名古屋・犬山」。犬山訊號弱，離線地圖救你一命，亦省數據。<br>
+  <b>④ 關 App 背景更新。</b>設定 → 一般 → 背景 App 重新整理 → 只留地圖同 WhatsApp。<br>
+  <b>⑤ 唔夠用就在 App 內加購。</b>Ubigi 可以即時 top-up，唔需要換卡。所以「10GB 唔夠」不是災難，只是多付幾十蚊。
+</div>
+
+<h3>優惠碼：最多 20%，兩張分開買最抵</h3>
+
+<div class="note">
+  <b>👉 最佳做法：兩張分開買，走 referral 鏈。</b><br>
+  ① <b>你先買</b> —— 用 referral code <b>Q7Z12JWN</b>（20% off）→ HK$304 × 0.8 ≈ <b>HK$243</b><br>
+  ② 買完在 Ubigi App「紹介／Refer」頁拎你自己個 code<br>
+  ③ <b>妹妹用你個 code 買</b>（她 20% off）→ 又係 ≈ <b>HK$243</b><br>
+  ④ 你另外收到一張 <b>50% off 券</b>（今次用唔著，留返下次）<br>
+  <b>合計 ≈ HK$486，省 HK$122。</b>
+</div>
+
+<table class="stack">
+  <thead><tr><th>Code／方式</th><th>折扣</th><th>條件</th></tr></thead>
+  <tbody>
+    <tr><td class="base"><b>Q7Z12JWN</b><br><span class="tag">推薦</span></td><td class="leg"><b>20%</b></td><td class="leg">朋友紹介碼。<b>只限在 Ubigi App 內首次購買</b>，官網唔得。一人一次。</td></tr>
+    <tr><td class="base">自己 Refer 妹妹</td><td class="leg"><b>她 20%</b><br>你 <b>50% 券</b></td><td class="leg">你買完之後 App 內「紹介」頁出自己的 code。她 20% off，你收 50% off 券（email）。</td></tr>
+    <tr><td class="base"><b>WELCOME10</b><br><span class="tag">穩陣後備</span></td><td class="leg"><b>10%</b></td><td class="leg"><b>Ubigi 官方碼</b>，網頁同 App 都用得。首次購買限定。<b>如果 20% 個碼 fail，用呢個。</b></td></tr>
+    <tr><td class="base">MYBESTSIM10</td><td class="leg">10%</td><td class="leg">合作夥伴碼，可以重複用（舊客都得），冇最低消費。</td></tr>
+    <tr><td class="base">STUDENTBEANS</td><td class="leg"><b>20%</b></td><td class="leg">經 Student Beans 驗證的學生。<b>妹妹如果係學生就用得</b>，新客限定。</td></tr>
+    <tr><td class="base">其他 coupon site 寫 30–50%</td><td class="leg">❌ 假</td><td class="leg"><b>結帳會 fail。</b>公開碼上限就係 10%（referral 20%）。真正 50% 只有 referral 送出、從不公開。</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>⚠️ 四條規則：</b><br>
+  ① <b>月額／訂閱 plan 唔適用</b> —— 你買 one-off 15 日，冇問題。<br>
+  ② <b>唔可以疊加</b> —— 一張訂單一個 code，揀最高那個。<br>
+  ③ <b>App vs 網頁</b> —— referral 20% 只限 App；WELCOME10 兩邊都得。<br>
+  ④ <b>付款前一定要見到折扣出現</b>才確認。冇折扣就換碼或者改用網頁版。
+</div>
+
+<h3>妹妹要自己一張</h3>
+<p class="leg">
+  eSIM 係一人一張，唔可以共用。她 iPhone XS 或之後都支援。<br>
+  共用熱點：一日戶外一定冇電（11/28 犬山全日冇得充），而且分開行就斷。<b>建議各買一張。</b>
+</p>
+
+<h3>出發前順手搞：Visit Japan Web</h3>
+<p class="leg">
+  日本入境／海關已改用 QR code。<b>在香港、有 Wi-Fi 時</b>上 <b>vjw-lp.digital.go.jp</b> 登記護照、航班、住宿，截圖兩個 QR（入境 + 海關）。<br>
+  唔預先搞好，就要在關西機場排隊用機器填 —— 11/21 你 16:25 落機，想趕 18:00 check-in，最好唔好浪費時間。
+</p>
+
+<h2>現金與付款：¥100,000 夠唔夠</h2>
+
+<div class="note">
+  <b>👉 答：夠，而且有大約兩倍緩衝。9 日 2 人真正「一定要現金」的支出，估算約 ¥50,000。</b><br>
+  大部分消費（百貨、電器、藥妝、燒肉、門票、新幹線）都收卡。現金只需要應付小店、寺廟、柏青哥、屋台。
+</div>
+
+<h3>一定要現金的部分（2 人 9 日）</h3>
+<table class="stack">
+  <thead><tr><th>項目</th><th>金額</th><th>備註</th></tr></thead>
+  <tbody>
+    <tr><td class="base">柏青哥</td><td class="leg">¥8,000</td><td class="leg">11/21 晚。<b>100% 現金</b> —— 換玉機、景品交換所全部唔收卡。當娛樂費，輸光都唔好心痛。</td></tr>
+    <tr><td class="base">寺廟・神社入場</td><td class="leg">¥11,000</td><td class="leg">東福寺 ¥1,000×2、永観堂 ¥1,000×2、南禅寺方丈 ¥600×2、天龍寺 ¥500×2、犬山城 ¥600×2；如加返奈良就多東大寺 ¥800×2、春日大社 ¥500×2（已預留）。多數收現金，部分收 IC。</td></tr>
+    <tr><td class="base">拉麵・券売機</td><td class="leg">¥5,000</td><td class="leg">麺屋丈六、麺屋はなび —— 券売機通常只收現金（部分新型收 IC）。</td></tr>
+    <tr><td class="base">咖啡・屋台・市場小食</td><td class="leg">¥8,000</td><td class="leg">錦市場、大須商店街、名駅地下街サンロード的小店。老舖喫茶（コンパル）多數收卡，但小店、屋台好多只收現金。</td></tr>
+    <tr><td class="base">御朱印・護身符</td><td class="leg">¥4,000</td><td class="leg">每個 ¥300–500。伏見稲荷、東大寺、春日大社都有。</td></tr>
+    <tr><td class="base">儲物櫃</td><td class="leg">¥2,000</td><td class="leg">名古屋駅、京都駅。¥400–700 一次，多數收現金或 IC。</td></tr>
+    <tr><td class="base">應急</td><td class="leg">¥12,000</td><td class="leg">突然只收現金的店、的士、臨時買藥。</td></tr>
+    <tr><td class="base"><b>合計</b></td><td class="leg"><b>≈ ¥50,000</b></td><td class="leg">你帶 ¥100,000 ＝ <b>2 倍緩衝</b>，好安全。</td></tr>
+  </tbody>
+</table>
+
+<h3>收卡的部分（唔好用現金）</h3>
+<p class="leg">
+  新幹線 ¥6,380×2｜LEGOLAND ¥4,900–7,800×2｜リトルワールド ¥1,900×2｜ラウンドワン スポッチャ ¥2,640×2｜阪急うめだ・阪神梅田｜e☆イヤホン・ソフマップ｜藥妝｜燒肉 燦家｜香水｜たまごっちのおみせ｜便利店
+</p>
+
+<h3>⚠️ 陷阱一：巴士同老舖收費方式兩頭都要準備</h3>
+<div class="note">
+  <b>名古屋地鐵、名鉄、市内巴士全部收交通系 IC（manaca／Suica／PASMO）同感應式信用卡（タッチ決済）</b>，唔使現金。<br>
+  但反向的中招位要記住：<b>名鉄バス 矢並線（香嵐渓線）明文寫「現金利用不可」</b>，只收 IC 卡或感應式信用卡 —— 11/27 已改市區，唔會搭到，但如果之後改返去香嵐渓，帶幾多現金都上唔到車。<br><br>
+  <b>👉 即係話：IC 卡／感應式信用卡一定要隨身，現金係補位，唔係主角。</b>
+</div>
+
+<h3>⚠️ 陷阱二：iPhone Suica + 外國 Visa ＝ 充唔到</h3>
+<div class="note">
+  2026 年仍然係咁：<b>外國發行的 Visa 卡在 Apple Pay 加值 Suica／PASMO 會被網絡層 block</b>（顯示 Payment Not Completed）。Mastercard 同 Amex 正常。<br><br>
+  <b>三個解法，按次序試：</b><br>
+  ① Apple Wallet 改用 <b>Mastercard 或 Amex</b> 加值（每次 ¥1,000 起、單次上限 ¥10,000）<br>
+  ② 到日本後開 Location Services 再試 —— 部分 Visa 卡要人在日本才過<br>
+  ③ <b>車站售票機用現金增值</b>：按「チャージ」→ 放 iPhone 上感應區 → 入現金。最可靠。<br><br>
+  <b>👉 所以你 ¥100,000 裡面，最好留 ¥10,000–15,000 做 IC 卡增值備用。</b>
+</div>
+
+<h3>點帶、點換</h3>
+<table class="stack">
+  <thead><tr><th></th><th>做法</th></tr></thead>
+  <tbody>
+    <tr><td class="base">分配</td><td class="leg"><b>你帶 ¥60,000、妹妹帶 ¥40,000。</b>唔好一個人帶晒 —— 跌錢包、被偷都唔會全軍覆沒。</td></tr>
+    <tr><td class="base">面額</td><td class="leg">要求換 <b>¥5,000 同 ¥1,000 為主</b>，唔好全部 ¥10,000。日本好多小店找唔開一萬円。另備 ¥500／¥100 硬幣袋（神社、儲物櫃、屋台）。</td></tr>
+    <tr><td class="base">香港換</td><td class="leg">香港找換店或銀行換，匯率一般好過關西機場。機場只換應急的 ¥20,000。</td></tr>
+    <tr><td class="base">唔夠點算</td><td class="leg"><b>7-Eleven ATM</b> 接受外國卡提款，手續費 ¥110–220 ＋ 你銀行收費。所以唔需要一開始帶太多 —— ATM 遍佈全國，鄉郊都有。</td></tr>
+    <tr><td class="base">卡要帶邊張</td><td class="leg"><b>Visa 或 Mastercard 感應式</b>（タッチ決済）。<b>銀聯在鄉郊唔通行</b>，只在部分百貨同診所收。JCB 在日本最好用但香港少人有。</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>總結：¥100,000 足夠，唔需要加。</b>真正要準備的是「一張能感應付款的卡 ＋ 一張 IC 卡」，唔係更多現金。
+</div>
+
+<h2>免稅：2026/11/1 起改制</h2>
+
+<div class="traps">
+  <ol>
+    <li><b>改為「先付稅、後退稅」。</b>2026 年 11 月 1 日起，日本取消店內即時免稅。你在店裡付<b>含稅價</b>，出境時才拿回 10%。你 11/21–29 的行程<b>全部適用新制</b>。</li>
+    <li><b>退稅要在機場自己做。</b>到中部國際機場後，過安檢前找「免税手続用端末」（kiosk），插護照、掃描，系統會判定要否開箱檢查。也可以用 <b>Visit Japan Web</b> 在出發大堂連專用 Wi-Fi 線上辦。</li>
+    <li><b>退稅期限 90 日。</b>11/22 或 11/25 買，11/29 走完全在期內。同一店舖單日稅抜 <b>¥5,000</b> 以上才合資格。</li>
+    <li><b>中古品可否退稅要即場問。</b>好多店的中古貨唔做免稅手續，因為古物來源證明問題。買之前問一句「免税できますか？」。</li>
+    <li><b>貨品要跟你一齊出境。</b>手提行李帶住，唔好寄艙 —— 抽中要開箱檢查時，寄艙就拿不出來。</li>
+  </ol>
+</div>
+
+<h2>預算（2 人合計，住宿已訂不計）</h2>
+
+<table class="money">
+  <thead><tr><th>項目</th><th>金額</th></tr></thead>
+  <tbody>
+    <tr><td>機票 × 2（關西入／中部走）</td><td>HK$7,600 – 9,200</td></tr>
+    <tr><td>住宿 8 晚</td><td><b>已訂</b>（不計入）</td></tr>
+    <tr><td>交通 × 2（新幹線・近鉄・名鉄・巴士・市內）</td><td>≈ HK$2,100（¥43,000）</td></tr>
+    <tr><td>門票 × 2（LEGOLAND ¥5,700＋海遊館 ¥2,700＋漫畫館 ¥1,200＋寺廟）</td><td>≈ HK$1,440（¥29,400）</td></tr>
+    <tr><td>餐食 ¥6,000／日／人 × 9 日 × 2 人</td><td>≈ HK$5,300（¥108,000）</td></tr>
+    <tr><td>IEM／耳機（自選，未計入合計）</td><td>另計</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td>合計（未計住宿及購物）</td><td>≈ HK$16,550 – 18,150</td></tr>
+  </tfoot>
+</table>
+
+<h2>額外推薦</h2>
+
+<table class="stack">
+  <thead><tr><th>地點</th><th>排法</th><th>為咩值得</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="base">常滑<br>招財貓故鄉</td>
+      <td>未排・可作後備</td>
+      <td class="leg">由寺本出發只 10 分鐘，機場 5 分鐘。招き猫通り、陶藝散步道。<b>11/29 已改排大須 e☆イヤホン，所以常滑只能壓成 45 分鐘順路停</b>——但日落 16:45，去到已天黑，唔建議。</td>
+    </tr>
+    <tr>
+      <td class="base">犬山 寂光院</td>
+      <td>已併入 <b>11/28 犬山日</b></td>
+      <td class="leg">本來是 11/27 香嵐渓的替代方案；11/27 改市區之後，寂光院繼續留在 11/28（13:00 到）的犬山 day trip。</td>
+    </tr>
+    <tr>
+      <td class="base">リニア・鉄道館</td>
+      <td>可選：11/28 半天</td>
+      <td class="leg">金城ふ頭。C571 蒸汽機車、超電導磁浮實物。由名古屋站 24 分。</td>
+    </tr>
+    <tr>
+      <td class="base">神戸</td>
+      <td>可選：代替 11/24 京都</td>
+      <td class="leg">新今宮→三ノ宮 約 50 分。北野異人館、南京町、神戸港。行街＋食嘢選擇多，適合輕鬆日。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>備註</h2>
+<p class="lead">日圓金額為實查票價與實查房價；港幣以 1 港元 ≈ 20 日圓估算，實際以結帳當日匯率為準。航空公司、班次、房價與門票供應會隨開賣時間變動，出發前請再確認。</p>
+
+<footer>
+  2026 年 11 月 21–29 日　·　名古屋・京都・大阪　·　8 晚
+</footer>
+
+</div>
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var days = Array.prototype.slice.call(document.querySelectorAll('.day'));
+  function select(key, scroll){
+    tabs.forEach(function(t){
+      t.setAttribute('aria-selected', t.dataset.day === key ? 'true' : 'false');
+      t.setAttribute('role','tab');
+    });
+    days.forEach(function(d){ d.hidden = d.dataset.day !== key; });
+    if (scroll){
+      var b = tabs.filter(function(t){ return t.dataset.day === key; })[0];
+      if (b) b.scrollIntoView({block:'nearest', inline:'center', behavior:'smooth'});
+      var panel = days.filter(function(d){ return d.dataset.day === key; })[0];
+      if (panel) panel.scrollIntoView({block:'start', behavior:'smooth'});
+    }
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){ select(t.dataset.day, true); });
+  });
+  if (tabs.length) select(tabs[0].dataset.day, false);
+})();
+</script>
+</body>
+</html>
